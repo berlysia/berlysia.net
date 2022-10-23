@@ -6,7 +6,7 @@
     "allowJs": true,
     "skipLibCheck": true,
     "noEmit": true,
-    "module": "commonjs",
+    "module": "commonJS",
     "resolveJsonModule": true,
     "jsx": "preserve",
     "isolatedModules": true,
@@ -15,5 +15,5 @@
     "incremental": true
   },
   "exclude": ["**/*.test.ts"],
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["**/*.ts", "**/*.tsx", "**/*.mts"]
 }
