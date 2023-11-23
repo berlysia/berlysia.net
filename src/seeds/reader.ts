@@ -1,5 +1,8 @@
 import { z } from "zod";
-import seed from "./.tmp/remote.json";
+import seedJson from "./.tmp/remote.json";
+import stubJson from "./stub.json";
+
+const seed = process.env.NODE_ENV === "test" ? stubJson : seedJson;
 
 const ArticleSchema = z.object({
   kind: z.literal("remote"),

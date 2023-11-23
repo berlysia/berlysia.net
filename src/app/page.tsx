@@ -1,5 +1,5 @@
 import Index from "../components/pages/root";
-import { getByGenre } from "../seeds/remoteReader";
+import { getByGenre } from "../seeds/reader";
 
 const props = {
   imasArticles: getByGenre("imas", 6),

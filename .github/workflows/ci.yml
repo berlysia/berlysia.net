@@ -47,6 +47,8 @@ jobs:
             ${{ steps.env-key.outputs.value }}-${{ env.cache-name }}-${{ steps.lock-hash.outputs.value }}-
             ${{ steps.env-key.outputs.value }}-${{ env.cache-name }}-
       - run: yarn build
+        env:
+          NODE_ENV: test
       - run: yarn test:vrt:ci
       - uses: actions/upload-artifact@v3
         if: failure()
