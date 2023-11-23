@@ -5,7 +5,7 @@ const nextConfig = {
     typedRoutes: true,
   },
   images: {
-    unoptimized: process.env.NODE_ENV !== "production",
+    unoptimized: true,
   },
 };
 

@@ -14,12 +14,14 @@ export default function Header({ children }: Props) {
         </div>
         <div className="tw-flex tw-h-full tw-items-center">
           <a href="/" className="tw-block tw-w-fit tw-h-fit tw-mx-2">
-            <Image
-              src="/avatar.jpg"
+            {/* eslint-disable-next-line @next/next/no-img-element -- unopt */}
+            <img
+              src="/avatar-36.webp"
               alt="avatar"
               width={36}
               height={36}
-              className="tw-block tw-rounded-md tw-border tw-border-keyColor-100"
+              decoding="async"
+              className="tw-rounded-full tw-border-4 tw-border-keyColor-100"
             />
           </a>
         </div>

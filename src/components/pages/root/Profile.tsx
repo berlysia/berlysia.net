@@ -4,11 +4,14 @@ import { LinkMarbles } from "./LinkMarbles";
 export const Profile = () => (
   <div className="tw-flex tw-flex-wrap tw-justify-center">
     <div className="tw-flex-shrink-0 tw-flex tw-justify-center tw-items-center">
-      <Image
-        src="/avatar.jpg"
+      {/* eslint-disable-next-line @next/next/no-img-element -- unopt */}
+      <img
+        src="/avatar-192.webp"
         alt="avatar"
         width={192}
         height={192}
+        srcSet="avatar-384.webp 2x, avatar-640.webp 3x"
+        decoding="async"
         className="tw-rounded-full tw-border-4 tw-border-keyColor-100"
       />
     </div>
