@@ -1,0 +1,2 @@
+/blog/* https://blog.berlysia.net/:splat 307
+www.berlysia.net/* https://berlysia.net/:splat 307
