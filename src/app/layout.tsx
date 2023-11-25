@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { Lato, Noto_Sans_JP } from "next/font/google";
 import Script from "next/script";
 import clsx from "clsx";
+import { KumaRegistry } from "@kuma-ui/next-plugin/registry";
 import { gaEnabled, GA_ID } from "../lib/gtag";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../styles/globalStyle.css";
@@ -63,7 +64,9 @@ export default function Layout({ children }: Props) {
           </>
         )}
       </head>
-      <body>{children}</body>
+      <body>
+        <KumaRegistry>{children}</KumaRegistry>
+      </body>
     </html>
   );
 }
