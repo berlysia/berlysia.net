@@ -38,7 +38,7 @@
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
-    "@berlysia/eslint-config": "^5.0.0",
+    "@berlysia/eslint-config": "^5.0.2",
     "@playwright/test": "1.39.0",
     "@storybook/react": "7.5.3",
     "@tsconfig/next": "^2.0.1",
