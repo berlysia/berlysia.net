@@ -9,5 +9,10 @@
     ]
   },
   "exclude": ["src/**/*.test.ts"],
-  "include": ["src/**/*.ts", "src/**/*.tsx", ".next/types/**/*.ts"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    ".next/types/**/*.ts",
+    "kuma.config.ts"
+  ]
 }
