@@ -439,8 +439,8 @@ __metadata:
   linkType: hard
 
 "@berlysia/eslint-config@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "@berlysia/eslint-config@npm:5.0.0"
+  version: 5.0.2
+  resolution: "@berlysia/eslint-config@npm:5.0.2"
   dependencies:
     "@typescript-eslint/eslint-plugin": "npm:^6.0.0"
     "@typescript-eslint/parser": "npm:^6.0.0"
@@ -471,7 +471,7 @@ __metadata:
     local-pkg: "npm:^0.5.0"
   peerDependencies:
     eslint: "*"
-  checksum: 85a39993ecc82379674e18bc44bc4a5a7f5a72c72121383faff30f77da6d6e6367febf8fa108ac053990a972d131616f07a7b67be3eadc280d6baf701c422ef1
+  checksum: b9710b5f4261a05811aeb7fdacd19d1e0bc0ff7b1328429815beab91f48a04326e9b0f50b838c4d5c51a866f5afa2560ccf1359a428cc87ccd2bc3b6ade0f6fa
   languageName: node
   linkType: hard
 
@@ -4340,7 +4340,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:11.1.1, fs-extra@npm:^11.0.0, fs-extra@npm:^11.1.0":
+"fs-extra@npm:11.1.1":
   version: 11.1.1
   resolution: "fs-extra@npm:11.1.1"
   dependencies:
@@ -4348,6 +4348,17 @@ __metadata:
     jsonfile: "npm:^6.0.1"
     universalify: "npm:^2.0.0"
   checksum: a2480243d7dcfa7d723c5f5b24cf4eba02a6ccece208f1524a2fbde1c629492cfb9a59e4b6d04faff6fbdf71db9fdc8ef7f396417a02884195a625f5d8dc9427
+  languageName: node
+  linkType: hard
+
+"fs-extra@npm:^11.0.0, fs-extra@npm:^11.1.0":
+  version: 11.2.0
+  resolution: "fs-extra@npm:11.2.0"
+  dependencies:
+    graceful-fs: "npm:^4.2.0"
+    jsonfile: "npm:^6.0.1"
+    universalify: "npm:^2.0.0"
+  checksum: d77a9a9efe60532d2e790e938c81a02c1b24904ef7a3efb3990b835514465ba720e99a6ea56fd5e2db53b4695319b644d76d5a0e9988a2beef80aa7b1da63398
   languageName: node
   linkType: hard
 
