@@ -29,7 +29,7 @@ jobs:
         run: echo "value=${{ hashFiles('*.[cm]js','*.js','src/**/*.[jt]s','src/**/*.[jt]sx') }}" >> $GITHUB_OUTPUT
       - id: nextjs-cache-dir-path
         run: echo "value=${{ github.workspace }}/.next/cache" >> $GITHUB_OUTPUT
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
@@ -59,7 +59,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: "lts/*"
