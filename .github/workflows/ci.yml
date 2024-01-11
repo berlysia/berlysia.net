@@ -19,7 +19,7 @@ jobs:
   vrt:
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.39.0-focal
+      image: mcr.microsoft.com/playwright:v1.40.1-focal
     steps:
       - id: env-key
         run: echo "value=${{ runner.os }}-${{ env.NODE_VERSION }}" >> $GITHUB_OUTPUT
@@ -29,8 +29,8 @@ jobs:
         run: echo "value=${{ hashFiles('*.[cm]js','*.js','src/**/*.[jt]s','src/**/*.[jt]sx') }}" >> $GITHUB_OUTPUT
       - id: nextjs-cache-dir-path
         run: echo "value=${{ github.workspace }}/.next/cache" >> $GITHUB_OUTPUT
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "yarn"
@@ -50,7 +50,7 @@ jobs:
         env:
           NODE_ENV: test
       - run: yarn test:vrt:ci
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: test-results
@@ -59,8 +59,8 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
       - uses: actions/cache@v3
