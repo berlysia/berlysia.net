@@ -9,4 +9,4 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: curl --request POST --url '${{ secrets.VERCEL_DEPLOY_HOOK_URL }}'
+      - run: curl --request POST --url '${{ secrets.DEPLOY_HOOK_URL }}'
