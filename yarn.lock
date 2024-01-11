@@ -684,39 +684,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-<<<<<<< HEAD
 "@eslint/js@npm:8.56.0":
   version: 8.56.0
   resolution: "@eslint/js@npm:8.56.0"
   checksum: 60b3a1cf240e2479cec9742424224465dc50e46d781da1b7f5ef240501b2d1202c225bd456207faac4b34a64f4765833345bc4ddffd00395e1db40fa8c426f5a
-||||||| 1e43f71
-"@eslint/js@npm:8.53.0":
-  version: 8.53.0
-  resolution: "@eslint/js@npm:8.53.0"
-  checksum: d29f6c207b2f6dc4ef174d16a3c07b0d3a17ca3d805680496ff267edd773e3bac41db4e7dcab622ca1970d892535bd19671e2a756d4eac75e96fd8c8dcdb619b
-=======
-"@eslint/eslintrc@npm:^2.1.4":
-  version: 2.1.4
-  resolution: "@eslint/eslintrc@npm:2.1.4"
-  dependencies:
-    ajv: "npm:^6.12.4"
-    debug: "npm:^4.3.2"
-    espree: "npm:^9.6.0"
-    globals: "npm:^13.19.0"
-    ignore: "npm:^5.2.0"
-    import-fresh: "npm:^3.2.1"
-    js-yaml: "npm:^4.1.0"
-    minimatch: "npm:^3.1.2"
-    strip-json-comments: "npm:^3.1.1"
-  checksum: 32f67052b81768ae876c84569ffd562491ec5a5091b0c1e1ca1e0f3c24fb42f804952fdd0a137873bc64303ba368a71ba079a6f691cee25beee9722d94cc8573
-  languageName: node
-  linkType: hard
-
-"@eslint/js@npm:8.53.0":
-  version: 8.53.0
-  resolution: "@eslint/js@npm:8.53.0"
-  checksum: d29f6c207b2f6dc4ef174d16a3c07b0d3a17ca3d805680496ff267edd773e3bac41db4e7dcab622ca1970d892535bd19671e2a756d4eac75e96fd8c8dcdb619b
->>>>>>> origin/renovate/all-minor-patch
   languageName: node
   linkType: hard
 
@@ -1708,28 +1679,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-<<<<<<< HEAD
 "@types/node@npm:20.10.8":
   version: 20.10.8
   resolution: "@types/node@npm:20.10.8"
-||||||| 1e43f71
-"@types/node@npm:18.18.13":
-  version: 18.18.13
-  resolution: "@types/node@npm:18.18.13"
-=======
-"@types/node@npm:18.19.6":
-  version: 18.19.6
-  resolution: "@types/node@npm:18.19.6"
->>>>>>> origin/renovate/definitelytyped
   dependencies:
     undici-types: "npm:~5.26.4"
-<<<<<<< HEAD
   checksum: 93268c33c3bf0194427d696658160c77ab8661aa57107df5b248ff952898a372bf92cf0ba7fc07788fa35e59c69b6619cce63d45e4e67fca806e37da7ea42512
-||||||| 1e43f71
-  checksum: 5f1840f26b4c00e6b4945be678644a46e6689ef10d9d7795d587b76059045b99a14ca6075264296e6e91d73e098fe83df9580881278d9a6ce394b368d9c76700
-=======
-  checksum: 6cfffb738124d43bc240d21f3196270c15b9a4137644eee35a7e75460fda8df881630e350d00fcfd66caa37bf1ed80771f2da0d4c7cd0016c9f616934a2377c5
->>>>>>> origin/renovate/definitelytyped
   languageName: node
   linkType: hard
 
@@ -1777,12 +1732,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.2.18":
-  version: 18.2.18
-  resolution: "@types/react-dom@npm:18.2.18"
+"@types/react-dom@npm:18.2.17":
+  version: 18.2.17
+  resolution: "@types/react-dom@npm:18.2.17"
   dependencies:
     "@types/react": "npm:*"
-  checksum: 74dba11a1b8156f3a763f3fca1fb4ec1dcd349153279b8bf79210024a69f994bf2cf0728198c047f8130c5318420ea56281b0a4ef84c8ae943cd9a0cac705220
+  checksum: 33b53078ed7e9e0cfc4dc691e938f7db1cc06353bc345947b41b581c3efe2b980c9e4eb6460dbf5ddc521dd91959194c970221a2bd4bfad9d23ebce338e12938
   languageName: node
   linkType: hard
 
@@ -2549,19 +2504,9 @@ __metadata:
     "@storybook/react": "npm:7.6.7"
     "@tsconfig/next": "npm:^2.0.1"
     "@types/fs-extra": "npm:11.0.4"
-<<<<<<< HEAD
     "@types/node": "npm:20.10.8"
-    "@types/react": "npm:18.2.38"
-    "@types/react-dom": "npm:18.2.17"
-||||||| 1e43f71
-    "@types/node": "npm:18.18.13"
-    "@types/react": "npm:18.2.38"
-    "@types/react-dom": "npm:18.2.17"
-=======
-    "@types/node": "npm:18.19.6"
     "@types/react": "npm:18.2.47"
-    "@types/react-dom": "npm:18.2.18"
->>>>>>> origin/renovate/definitelytyped
+    "@types/react-dom": "npm:18.2.17"
     autoprefixer: "npm:10.4.16"
     clsx: "npm:^1.2.1"
     del-cli: "npm:5.1.0"
@@ -2572,16 +2517,8 @@ __metadata:
     lint-staged: "npm:13.3.0"
     next: "npm:^14.0.4-canary.11"
     npm-run-all: "npm:4.1.5"
-<<<<<<< HEAD
     playwright: "npm:1.40.1"
-    postcss: "npm:8.4.31"
-||||||| 1e43f71
-    playwright: "npm:1.39.0"
-    postcss: "npm:8.4.31"
-=======
-    playwright: "npm:1.39.0"
     postcss: "npm:8.4.33"
->>>>>>> origin/renovate/all-minor-patch
     prettier: "npm:2.8.8"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
