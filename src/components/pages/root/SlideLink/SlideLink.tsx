@@ -73,14 +73,7 @@ export function SlideLink({
                   slide
                 </a>
                 {withHatenaBookmark ? (
-                  <a
-                    href={`https://b.hatena.ne.jp/entry/${slideLink}`}
-                    className="tw-flex tw-items-center tw-rounded-md tw-p-1 tw-h-8 tw-text-blue-600 visited:tw-text-purple-800 hover:tw-bg-gray-200 focus:tw-bg-gray-200"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <HatenaBookmarkCounter link={slideLink} />
-                  </a>
+                  <HatenaBookmarkCounter link={slideLink} />
                 ) : null}
               </>
             )}
@@ -128,16 +121,7 @@ export function SlideLink({
                           slide
                         </a>
                         {withHatenaBookmark ? (
-                          <a
-                            href={`https://b.hatena.ne.jp/entry/${slideLink}`}
-                            className="tw-flex tw-items-center tw-rounded-md tw-px-1 tw-h-6 tw-text-blue-600 visited:tw-text-purple-800 hover:tw-bg-gray-200 focus:tw-bg-gray-200"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <HatenaBookmarkCounter
-                              link={`https://b.hatena.ne.jp/entry/image/${slideLink}`}
-                            />
-                          </a>
+                          <HatenaBookmarkCounter link={slideLink} />
                         ) : null}
                       </li>
                     )}
