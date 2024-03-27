@@ -46,7 +46,7 @@
     "@types/node": "20.10.8",
     "@types/react": "18.2.47",
     "@types/react-dom": "18.2.17",
-    "autoprefixer": "10.4.16",
+    "autoprefixer": "10.4.19",
     "del-cli": "5.1.0",
     "eslint": "8.56.0",
     "eslint-config-next": "^14.0.4-canary.14",
@@ -54,15 +54,15 @@
     "lint-staged": "13.3.0",
     "npm-run-all": "4.1.5",
     "playwright": "1.40.1",
-    "postcss": "8.4.33",
+    "postcss": "8.4.38",
     "prettier": "2.8.8",
-    "tailwindcss": "3.4.1",
+    "tailwindcss": "3.4.2",
     "tailwindcss-logical": "^3.0.0",
     "tsx": "^3.13.0",
-    "typescript": "5.3.3"
+    "typescript": "5.4.3"
   },
   "dependencies": {
-    "@builder.io/partytown": "^0.8.0",
+    "@builder.io/partytown": "^0.10.0",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
