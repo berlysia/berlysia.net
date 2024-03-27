@@ -1194,14 +1194,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@playwright/test@npm:1.40.1":
-  version: 1.40.1
-  resolution: "@playwright/test@npm:1.40.1"
+"@playwright/test@npm:1.42.1":
+  version: 1.42.1
+  resolution: "@playwright/test@npm:1.42.1"
   dependencies:
-    playwright: "npm:1.40.1"
+    playwright: "npm:1.42.1"
   bin:
     playwright: cli.js
-  checksum: 1edbc9659fb6a9c5299cacd9a0c7d3fdc88939036642d8f367e13d267d808ae3f88ca9d00e9981e3bcd5f584ccefba38d24eda6b23d27895908f203dc35f339e
+  checksum: e5d7c1ffedabb934643edb010038edcb70d51d224fb6444844a854d94365a6179d4407a83da176cae37ccd42b62c148843e0b6f9b4c6506048e06558c00d4267
   languageName: node
   linkType: hard
 
@@ -2481,7 +2481,7 @@ __metadata:
     "@fortawesome/fontawesome-svg-core": "npm:^6.2.1"
     "@fortawesome/free-solid-svg-icons": "npm:^6.2.1"
     "@fortawesome/react-fontawesome": "npm:^0.2.0"
-    "@playwright/test": "npm:1.40.1"
+    "@playwright/test": "npm:1.42.1"
     "@storybook/react": "npm:7.6.7"
     "@tsconfig/next": "npm:^2.0.1"
     "@types/fs-extra": "npm:11.0.4"
@@ -2498,7 +2498,7 @@ __metadata:
     lint-staged: "npm:13.3.0"
     next: "npm:^14.0.4-canary.11"
     npm-run-all: "npm:4.1.5"
-    playwright: "npm:1.40.1"
+    playwright: "npm:1.42.1"
     postcss: "npm:8.4.33"
     prettier: "npm:3.2.5"
     react: "npm:^18.2.0"
@@ -7224,27 +7224,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright-core@npm:1.40.1":
-  version: 1.40.1
-  resolution: "playwright-core@npm:1.40.1"
+"playwright-core@npm:1.42.1":
+  version: 1.42.1
+  resolution: "playwright-core@npm:1.42.1"
   bin:
     playwright-core: cli.js
-  checksum: 56c283012974982313a6ae583b975ee4af76d52059fb9a25d9cc616a11224685ec64682b391910c795d2b12d2ab5c7eec31124722c75c0b1703a76ac9b6fd1c2
+  checksum: 9bb0be6defa32eb1b01429615f10c2ad17dcf701656c081a250369c1eb3b0dcc2a0ee21188cd653cdd2303ca73ff94df0d270b178fe3897eba274793dab368ce
   languageName: node
   linkType: hard
 
-"playwright@npm:1.40.1":
-  version: 1.40.1
-  resolution: "playwright@npm:1.40.1"
+"playwright@npm:1.42.1":
+  version: 1.42.1
+  resolution: "playwright@npm:1.42.1"
   dependencies:
     fsevents: "npm:2.3.2"
-    playwright-core: "npm:1.40.1"
+    playwright-core: "npm:1.42.1"
   dependenciesMeta:
     fsevents:
       optional: true
   bin:
     playwright: cli.js
-  checksum: 5dae164d1f69162da8d7eee52da651296fb885c76a8b36049f216975c751a0a826ff05795a1c0902dc0bd193fe606ae17d5def655f4cbcccb8d8b71afb74b950
+  checksum: 91dcbfe92d75ca9eb4bfff69bb1ec28007b5a96f6187f48e52aa0f6acf8c24f6039ed6467c152964cc92f4ab64b85dc665b13c52b2fb9f7b9182ddb9db404e37
   languageName: node
   linkType: hard
 
