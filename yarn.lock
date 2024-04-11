@@ -1679,12 +1679,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.11.30":
-  version: 20.11.30
-  resolution: "@types/node@npm:20.11.30"
+"@types/node@npm:20.12.7":
+  version: 20.12.7
+  resolution: "@types/node@npm:20.12.7"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10c0/867cfaf969c6d8850d8d7304e7ab739898a50ecb1395b61ff2335644f5f48d7a46fbc4a14cee967aed65ec134b61a746edae70d1f32f11321ccf29165e3bc4e6
+  checksum: 10c0/dce80d63a3b91892b321af823d624995c61e39c6a223cc0ac481a44d337640cc46931d33efb3beeed75f5c85c3bda1d97cef4c5cd4ec333caf5dee59cff6eca0
   languageName: node
   linkType: hard
 
@@ -1732,12 +1732,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.2.22":
-  version: 18.2.22
-  resolution: "@types/react-dom@npm:18.2.22"
+"@types/react-dom@npm:18.2.25":
+  version: 18.2.25
+  resolution: "@types/react-dom@npm:18.2.25"
   dependencies:
     "@types/react": "npm:*"
-  checksum: 10c0/cd85b5f402126e44b8c7b573e74737389816abcc931b2b14d8f946ba81cce8637ea490419488fcae842efb1e2f69853bc30522e43fd8359e1007d4d14b8d8146
+  checksum: 10c0/87604407eca6884c5b4d4657cb511dc5ba28ea1cfa5d0ce1fc2d659a7ad1b64ae85dcda60e3f010641f9a52a6a60dfcaa6be3b0d0de9d624475052a13dae01f4
   languageName: node
   linkType: hard
 
@@ -1752,13 +1752,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.72":
-  version: 18.2.72
-  resolution: "@types/react@npm:18.2.72"
+"@types/react@npm:18.2.76":
+  version: 18.2.76
+  resolution: "@types/react@npm:18.2.76"
   dependencies:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10c0/fe8a17a4067ab9d432ab1034967a8b2a773125e47ae84ee00e428a8b6c48912ab22d244ae6128663b119a38716a642bc5be019fcd2b3b2f4ab3c9b0200a6cc2d
+  checksum: 10c0/2bdff894675698bcfdf591e74c7e427cce25e7dbfe21882d8958280e4cc9a07b11d918bf33a38e21fc835b659a25555f0797c5c432bb46b7f1ebc304cae496ed
   languageName: node
   linkType: hard
 
@@ -2568,9 +2568,9 @@ __metadata:
     "@storybook/react": "npm:7.6.17"
     "@tsconfig/next": "npm:^2.0.1"
     "@types/fs-extra": "npm:11.0.4"
-    "@types/node": "npm:20.11.30"
-    "@types/react": "npm:18.2.72"
-    "@types/react-dom": "npm:18.2.22"
+    "@types/node": "npm:20.12.7"
+    "@types/react": "npm:18.2.76"
+    "@types/react-dom": "npm:18.2.25"
     autoprefixer: "npm:10.4.19"
     clsx: "npm:^2.0.0"
     del-cli: "npm:5.1.0"
