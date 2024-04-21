@@ -1760,13 +1760,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.76":
-  version: 18.2.76
-  resolution: "@types/react@npm:18.2.76"
+"@types/react@npm:18.2.79":
+  version: 18.2.79
+  resolution: "@types/react@npm:18.2.79"
   dependencies:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10c0/2bdff894675698bcfdf591e74c7e427cce25e7dbfe21882d8958280e4cc9a07b11d918bf33a38e21fc835b659a25555f0797c5c432bb46b7f1ebc304cae496ed
+  checksum: 10c0/c8a8a005d8830a48cc1ef93c3510c4935a2a03e5557dbecaa8f1038450cbfcb18eb206fa7fba7077d54b8da21faeb25577e897a333392770a7797f625b62c78a
   languageName: node
   linkType: hard
 
@@ -2577,7 +2577,7 @@ __metadata:
     "@tsconfig/next": "npm:^2.0.1"
     "@types/fs-extra": "npm:11.0.4"
     "@types/node": "npm:20.12.7"
-    "@types/react": "npm:18.2.76"
+    "@types/react": "npm:18.2.79"
     "@types/react-dom": "npm:18.2.25"
     autoprefixer: "npm:10.4.19"
     clsx: "npm:^2.0.0"
