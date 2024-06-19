@@ -1,6 +1,6 @@
 import { SlideLink } from "./SlideLink/SlideLink";
 
-const talks: readonly {
+const talks: ReadonlyArray<{
   eventTitle: string;
   eventLink: string;
   talkTitle: string;
@@ -8,7 +8,7 @@ const talks: readonly {
   slideLink?: string;
   pubDateString: string;
   talkArchiveLink?: string;
-}[] = [
+}> = [
   {
     eventTitle: "JSConf JP 2022",
     eventLink: "https://jsconf.jp/2022/",

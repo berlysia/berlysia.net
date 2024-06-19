@@ -572,9 +572,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@berlysia/eslint-config@npm:6.0.0":
-  version: 6.0.0
-  resolution: "@berlysia/eslint-config@npm:6.0.0"
+"@berlysia/eslint-config@npm:6.0.1":
+  version: 6.0.1
+  resolution: "@berlysia/eslint-config@npm:6.0.1"
   dependencies:
     "@typescript-eslint/eslint-plugin": "npm:^7.1.0"
     "@typescript-eslint/parser": "npm:^7.1.0"
@@ -604,7 +604,7 @@ __metadata:
     local-pkg: "npm:^0.5.0"
   peerDependencies:
     eslint: "*"
-  checksum: 10c0/1ee495b1704cc56af582caddc347cd10ba6a68df3e92dfbe54f878bcf4b0ef202e8d746ffb8f365bb755085fea190c0bb929244def740df355aee44becd18bb7
+  checksum: 10c0/91af756f9193ad735a7d91897bde5bb998a2f3b3a90391d27cf4790bb05ed6f92f60d46381050b4ab124b724c7ac0481d0959fc88f8a151ebd90a30cdd5c71b5
   languageName: node
   linkType: hard
 
@@ -2952,7 +2952,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "berlysia-net@workspace:."
   dependencies:
-    "@berlysia/eslint-config": "npm:6.0.0"
+    "@berlysia/eslint-config": "npm:6.0.1"
     "@builder.io/partytown": "npm:^0.10.0"
     "@fortawesome/fontawesome-svg-core": "npm:^6.2.1"
     "@fortawesome/free-solid-svg-icons": "npm:^6.2.1"

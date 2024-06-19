@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element -- 桁数を綺麗に反映させるのが難しい */
+// /* eslint-disable @next/next/no-img-element -- 桁数を綺麗に反映させるのが難しい */
 export default function HatenaBookmarkCounter({
   link,
   alt,

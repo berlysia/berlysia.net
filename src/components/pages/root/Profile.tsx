@@ -4,7 +4,7 @@ import { LinkMarbles } from "./LinkMarbles";
 export const Profile = () => (
   <div className="tw-flex tw-flex-wrap tw-justify-center">
     <div className="tw-flex-shrink-0 tw-flex tw-justify-center tw-items-center">
-      {/* eslint-disable-next-line @next/next/no-img-element -- unopt */}
+      {/* // eslint-disable-next-line @next/next/no-img-element -- unopt */}
       <img
         src="/avatar-192.webp"
         alt="avatar"
