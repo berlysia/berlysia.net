@@ -1717,12 +1717,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.12.14":
-  version: 20.12.14
-  resolution: "@types/node@npm:20.12.14"
+"@types/node@npm:20.14.6":
+  version: 20.14.6
+  resolution: "@types/node@npm:20.14.6"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10c0/d6e383a09139efdedd91f4e8b584bb9b7537382d3dd276296a68b20a7819a562ae651efdd007a60036116f286b9c9a8a31af698f93b4024e569b0d129f293165
+  checksum: 10c0/22640f0eb2a955872e4529a93be1b719f67b527b80fdab51419756d20e21b5ce0f4ccbee9a3e2ff20e5def647f77baf77b4b0434ff8896791c102165ec0c3e48
   languageName: node
   linkType: hard
 
@@ -2596,7 +2596,7 @@ __metadata:
     "@storybook/react": "npm:7.6.19"
     "@tsconfig/next": "npm:^2.0.1"
     "@types/fs-extra": "npm:11.0.4"
-    "@types/node": "npm:20.12.14"
+    "@types/node": "npm:20.14.6"
     "@types/react": "npm:18.3.3"
     "@types/react-dom": "npm:18.3.0"
     autoprefixer: "npm:10.4.19"
