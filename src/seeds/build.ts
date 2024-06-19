@@ -9,10 +9,10 @@ import old_tech from "./old_tech.json" assert { type: "json" };
 
 const SEEDS_DIR = path.resolve(process.cwd(), "src", "seeds");
 
-const IGNORE_URLS = [
+const IGNORE_URLS = new Set([
   "https://blog.berlysia.net/entry/sample",
   "https://blog.nnn.dev/entry/casual-mendan-info",
-];
+]);
 
 // eslint-disable-next-line unicorn/prefer-top-level-await -- CJSなので許せ（eslintrcをいじってもよさそうだが）
 (async function main() {
@@ -24,7 +24,7 @@ const IGNORE_URLS = [
           const { items, ...feedRest } = await parser.parseURL(feed.feedUrl);
           const mappedItems = items.filter(
             (item) =>
-              !IGNORE_URLS.includes(item.link ?? "") &&
+              !IGNORE_URLS.has(item.link ?? "") &&
               (feed.siteUrl === "https://blog.berlysia.net/"
                 ? item.categories?.includes(genre)
                 : true)
