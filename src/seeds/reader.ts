@@ -16,15 +16,19 @@ const ArticleSchema = z.object({
 
 export type Article = z.infer<typeof ArticleSchema>;
 
-function ensureAuthor(item: any): any {
+function ensureProperties(item: any): any {
+  const result = { ...item };
   if (!("author" in item) && "creator" in item) {
-    return {
-      ...item,
-      author: item.creator,
-    };
+    result.author = item.creator;
+  }
+  if (!result.author) {
+    result.author = "berlysia";
+  }
+  if (!("pubDate" in item) && "isoDate" in item) {
+    result.pubDate = item.isoDate;
   }
 
-  return item;
+  return result;
 }
 
 function populatePubDate<T extends { pubDate: string }>(
@@ -48,10 +52,15 @@ export function getByGenre(genre: "imas" | "tech", count: number): Article[] {
   const sites: Array<{ items: any[] }> = seed[genre];
   return sites
     .flatMap((site: any) => site.items)
-    .map((element) => injectKind(populatePubDate(ensureAuthor(element))))
-    .filter(
-      (element): element is Article => ArticleSchema.safeParse(element).success
-    )
+    .map((element) => injectKind(populatePubDate(ensureProperties(element))))
+    .filter((element): element is Article => {
+      const result = ArticleSchema.safeParse(element);
+      if (result.success) {
+        return true;
+      }
+      console.error(result.error.errors);
+      return false;
+    })
     .sort((a, b) => b.pubDate - a.pubDate)
     .slice(0, count);
 }

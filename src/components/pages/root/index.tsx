@@ -3,7 +3,6 @@ import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import { FullHeightContainer } from "../../FullHeightContainer/FullHeightContainer";
 import type { Article } from "../../../seeds/reader";
 import { ArticleArea } from "./ArticleArea";
-import { ArticleLinks } from "./ArticleLinks";
 import { Profile } from "./Profile";
 import { Talks } from "./Talks";
 
@@ -38,9 +37,6 @@ export default function Index(props: {
                 withHatenaBookmark
               />
             </div>
-          </div>
-          <div className="tw-flex tw-justify-center">
-            <ArticleLinks />
           </div>
         </div>
       </FullHeightContainer>

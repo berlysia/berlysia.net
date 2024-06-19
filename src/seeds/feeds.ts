@@ -20,6 +20,11 @@ export const tech: Feed[] = [
     siteUrl: "https://blog.nnn.dev/",
     feedUrl: "https://blog.nnn.dev/feed/author/berlysia",
   },
+  {
+    siteTitle: "blog.berlysia.net",
+    siteUrl: "https://blog.berlysia.net/",
+    feedUrl: "https://blog.berlysia.net/rss/rss.xml",
+  },
 ];
 
 export const imas: Feed[] = [
@@ -28,5 +33,10 @@ export const imas: Feed[] = [
     siteUrl: "https://berlysia.hatenablog.com/",
     feedUrl:
       "https://berlysia.hatenablog.com/feed/category/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC",
+  },
+  {
+    siteTitle: "blog.berlysia.net",
+    siteUrl: "https://blog.berlysia.net/",
+    feedUrl: "https://blog.berlysia.net/rss/rss.xml",
   },
 ];
