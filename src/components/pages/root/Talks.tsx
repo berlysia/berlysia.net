@@ -10,6 +10,25 @@ const talks: ReadonlyArray<{
   talkArchiveLink?: string;
 }> = [
   {
+    eventTitle: "Web Developer Conference 2024",
+    eventLink: "https://web-study.connpass.com/event/321711/",
+    talkTitle:
+      "1 分 de Web 標準 / CSS Logical Properties and Values について 1 分で",
+    talkLink: "https://web-study.connpass.com/event/321711/",
+    slideLink: "https://twitter.com/berlysia/status/1832728610245095595",
+    pubDateString: "2024/09/07",
+  },
+  {
+    eventTitle: "フロントエンドカンファレンス北海道2024",
+    eventLink: "https://www.frontend-conf.jp/",
+    talkTitle: "CSSレイアウト再入門:完全に理解してCSSを記述するために",
+    talkLink:
+      "https://fortee.jp/frontend-conf-hokkaido-2024/proposal/923208ce-e2e1-4b6c-8c4f-123f8a4fc1f9",
+    slideLink:
+      "https://speakerdeck.com/berlysia/revisiting-css-layout-mastering-css-for-writing-with-complete-understanding",
+    pubDateString: "2024/08/24",
+  },
+  {
     eventTitle: "JSConf JP 2022",
     eventLink: "https://jsconf.jp/2022/",
     talkTitle:
