@@ -1,5 +1,6 @@
 import type { StoryObj, Meta } from "@storybook/react";
 
+import type { ComponentProps } from "react";
 import { SlideLink } from "./SlideLink";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -10,7 +11,7 @@ export default {
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: StoryObj<typeof SlideLink> = {
-  render: (args) => (
+  render: (args: ComponentProps<typeof SlideLink>) => (
     <div className="tw-w-[460px] tw-border-2 tw-border-gray-600">
       <SlideLink {...args} />
     </div>
