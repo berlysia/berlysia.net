@@ -6,6 +6,7 @@
 
 html {
   min-height: 100vh;
+  min-height: 100svh;
   overflow-y: scroll;
 
   font-family: var(--font-family-lato), "Helvetica Neue", "Helvetica",
@@ -18,6 +19,8 @@ html {
 
 body {
   min-height: 100vh;
+  min-height: 100svh;
+  @apply tw-bg-keyColor-50;
 }
 
 a {
