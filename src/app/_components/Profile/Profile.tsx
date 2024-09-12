@@ -7,6 +7,7 @@ export const Profile = (props: {
   readonly descriptionFor?: "imas" | "tech";
 }) => (
   <div className="tw-flex-1">
+    <GenreSwitcher />
     <Card className={styles.root}>
       <div className="tw-flex tw-p-4 tw-flex-wrap">
         <div className="tw-flex-shrink-0 tw-flex tw-place-items-start tw-p-1">
@@ -32,11 +33,12 @@ export const Profile = (props: {
         </div>
       </div>
     </Card>
-    {!props.descriptionFor && (
-      <div className="tw-flex tw-justify-center tw-leading-8">
-        <LinkMarbles />
-      </div>
-    )}
+    {!props.descriptionFor && <LinkMarbles />}
+  </div>
+);
+
+function GenreSwitcher() {
+  return (
     <div className="tw-flex tw-justify-center tw-leading-8 tw-text-lg">
       <Link href="/tech">&lt;- tech</Link>
       <span className="tw-mli-4"> / </span>
@@ -44,8 +46,8 @@ export const Profile = (props: {
       <span className="tw-mli-4"> / </span>
       <Link href="/imas">imas -&gt;</Link>
     </div>
-  </div>
-);
+  );
+}
 
 function GeneralDescription() {
   return (

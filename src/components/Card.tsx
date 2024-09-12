@@ -7,7 +7,7 @@ export default function Card(props: {
   return (
     <div
       className={clsx(
-        "tw-rounded-xl tw-p-2 tw-mlb-1 tw-bg-white tw-drop-shadow-md",
+        "tw-rounded-xl tw-p-2 tw-mlb-1 tw-bg-white tw-drop-shadow-md tw-flex-1 tw-max-w-full",
         props.className
       )}
     >

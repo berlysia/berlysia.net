@@ -46,7 +46,7 @@ const MARBLES: Array<{
 ];
 
 export const LinkMarbles = () => (
-  <ul className="tw-flex tw-gap-8">
+  <ul className="tw-flex tw-gap-x-8 tw-gap-y-2 tw-plb-2 tw-flex-wrap tw-justify-center">
     {MARBLES.map((marble) => (
       <li key={marble.title} className="tw-inline-block">
         <a
