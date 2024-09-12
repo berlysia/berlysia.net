@@ -13,6 +13,14 @@ export default berlysia(
         tsconfigRootDir: currentDir,
       },
     },
+  },
+  {
+    rules: {
+      "promise/prefer-await-to-callbacks": "off",
+      "promise/prefer-await-to-then": "off",
+      "unicorn/no-useless-undefined": "off",
+      "node/callback-return": "off",
+    },
   }
   // {
   //   plugins: {

@@ -7,7 +7,7 @@ export function FullHeightContainer(props: HTMLAttributes<HTMLDivElement>) {
     <div
       {...rest}
       className={clsx(
-        "tw-flex tw-justify-center tw-items-center tw-min-h-screen tw-p-6",
+        "tw-flex tw-place-items-center tw-min-h-screen tw-p-6",
         className
       )}
     >

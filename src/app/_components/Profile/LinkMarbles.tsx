@@ -46,12 +46,12 @@ const MARBLES: Array<{
 ];
 
 export const LinkMarbles = () => (
-  <ul className="">
+  <ul className="tw-flex tw-gap-8">
     {MARBLES.map((marble) => (
-      <li key={marble.title}>
+      <li key={marble.title} className="tw-inline-block">
         <a
           className="tw-underline"
-          rel="noopener noreferrer"
+          rel="noreferrer"
           target="_blank"
           href={marble.url}
           aria-label={marble.label}

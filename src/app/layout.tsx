@@ -7,6 +7,7 @@ import { gaEnabled, GA_ID } from "../lib/gtag";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../styles/globalStyle.css";
 import { SITE_NAME } from "../constant";
+import TransitionProvder from "../components/TransitionProvider";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -63,7 +64,9 @@ export default function Layout({ children }: Props) {
           </>
         )}
       </head>
-      <body>{children}</body>
+      <body>
+        <TransitionProvder>{children}</TransitionProvder>
+      </body>
     </html>
   );
 }

@@ -2,6 +2,7 @@
 
 import React, { useCallback, useRef } from "react";
 import HatenaBookmarkCounter from "../../../../components/HatenaBookmarkCounter";
+import Card from "../../../../components/Card";
 
 export function SlideLink({
   eventTitle,
@@ -39,7 +40,7 @@ export function SlideLink({
   );
 
   return (
-    <div className="tw-rounded-xl tw-border-pink-200 tw-border tw-p-2 tw-mlb-1">
+    <Card>
       <a
         className="tw-block tw-rounded-md tw-py-4 tw-text-2xl tw-text-blue-600 visited:tw-text-purple-800 hover:tw-bg-pink-100 focus:tw-bg-pink-100"
         href={talkLink}
@@ -151,6 +152,6 @@ export function SlideLink({
           {pubDateString}
         </time>
       </div>
-    </div>
+    </Card>
   );
 }

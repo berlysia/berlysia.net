@@ -96,10 +96,7 @@ export const Talks = ({
     <h2 className="tw-text-2xl tw-font-bold tw-mb-2">Tech Talks</h2>
     <ul className="tw-p-0">
       {talks.map((talk) => (
-        <li
-          key={talk.talkLink}
-          className="tw-text-base tw-border-0 tw-border-b tw-border-solid tw-border-gray-100"
-        >
+        <li key={talk.talkLink} className="tw-text-base tw-my-2">
           <SlideLink {...talk} withHatenaBookmark={withHatenaBookmark} />
         </li>
       ))}
