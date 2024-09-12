@@ -9,8 +9,8 @@ export const Profile = (props: {
   <div className="tw-flex-1">
     <GenreSwitcher />
     <Card className={styles.root}>
-      <div className="tw-flex tw-p-4 tw-flex-wrap">
-        <div className="tw-flex-shrink-0 tw-flex tw-place-items-start tw-p-1">
+      <div className="tw-flex tw-p-4 tw-flex-wrap tw-justify-center tw-items-start">
+        <div className="tw-flex-shrink-0 tw-flex tw-items-center tw-justify-start tw-p-1">
           {/* // eslint-disable-next-line @next/next/no-img-element -- unopt */}
           <img
             src="/avatar-128.webp"
