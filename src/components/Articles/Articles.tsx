@@ -1,8 +1,8 @@
-import formatDate from "../../../lib/dateFormatter";
-import type { Article } from "../../../seeds/reader";
+import formatDate from "../../lib/dateFormatter";
+import type { Article } from "../../seeds/reader";
 import { ArticleLink } from "./ArticleLink/ArticleLink";
 
-export const ArticleArea = ({
+export const Articles = ({
   articles,
   withHatenaBookmark,
 }: {

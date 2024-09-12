@@ -1,6 +1,5 @@
-import { SlideLink } from "./SlideLink/SlideLink";
-
-const talks: ReadonlyArray<{
+export type Talk = {
+  id: string;
   eventTitle: string;
   eventLink: string;
   talkTitle: string;
@@ -8,8 +7,11 @@ const talks: ReadonlyArray<{
   slideLink?: string;
   pubDateString: string;
   talkArchiveLink?: string;
-}> = [
+};
+
+export const talks: readonly Talk[] = [
   {
+    id: "wdc2024",
     eventTitle: "Web Developer Conference 2024",
     eventLink: "https://web-study.connpass.com/event/321711/",
     talkTitle:
@@ -19,6 +21,7 @@ const talks: ReadonlyArray<{
     pubDateString: "2024/09/07",
   },
   {
+    id: "frontendconf-hokkaido-2024",
     eventTitle: "フロントエンドカンファレンス北海道2024",
     eventLink: "https://www.frontend-conf.jp/",
     talkTitle: "CSSレイアウト再入門:完全に理解してCSSを記述するために",
@@ -29,6 +32,7 @@ const talks: ReadonlyArray<{
     pubDateString: "2024/08/24",
   },
   {
+    id: "jsconfjp2022",
     eventTitle: "JSConf JP 2022",
     eventLink: "https://jsconf.jp/2022/",
     talkTitle:
@@ -39,6 +43,7 @@ const talks: ReadonlyArray<{
     talkArchiveLink: "https://www.youtube.com/watch?v=IhPGvFal15E",
   },
   {
+    id: "icare-dev-meetup-30",
     eventTitle: "iCARE Dev Meetup #30",
     eventLink: "https://icare.connpass.com/event/237019/",
     talkTitle: "N予備校とWebフロントエンドの新陳代謝",
@@ -48,6 +53,7 @@ const talks: ReadonlyArray<{
     talkArchiveLink: "https://youtu.be/VlE6hJme1Rc?t=1602",
   },
   {
+    id: "dwango-edtech-talk",
     eventTitle: "ドワンゴ EdTech Talk",
     eventLink: "https://dwango.connpass.com/event/230731/",
     talkTitle: "N予備校のフロントエンド開発の取り組み",
@@ -57,6 +63,7 @@ const talks: ReadonlyArray<{
     talkArchiveLink: undefined,
   },
   {
+    id: "front-end-lounge-2-sponsor-talk",
     eventTitle: "Front-End Lounge #2「フロントエンドエンジニアのキャリア」",
     eventLink: "https://forkwell.connpass.com/event/230632/",
     talkTitle: "後手から始まるフロントエンド（スポンサートーク）",
@@ -66,6 +73,7 @@ const talks: ReadonlyArray<{
     talkArchiveLink: "https://www.youtube.com/watch?v=zw_bt_j2xW0",
   },
   {
+    id: "jsconfjp2021",
     eventTitle: "JSConf JP 2021",
     eventLink: "https://jsconf.jp/2021/",
     talkTitle: "Webフロントエンドのリプレースを支えるテストの考え方",
@@ -77,6 +85,7 @@ const talks: ReadonlyArray<{
       "https://www.youtube.com/watch?v=16ux8nTqJ7k&list=PL42hYWKFRfN7XWswj9wcC0j4191KNJuO3&index=1",
   },
   {
+    id: "tnd29",
     eventTitle: "東京Node学園 29時限目",
     eventLink: "https://nodejs.connpass.com/event/78902/",
     talkTitle: "rxjs v6 について",
@@ -87,19 +96,10 @@ const talks: ReadonlyArray<{
   },
 ] as const;
 
-export const Talks = ({
-  withHatenaBookmark,
-}: {
-  readonly withHatenaBookmark?: boolean;
-}) => (
-  <div>
-    <h2 className="tw-text-2xl tw-font-bold tw-mb-2">Tech Talks</h2>
-    <ul className="tw-p-0">
-      {talks.map((talk) => (
-        <li key={talk.talkLink} className="tw-text-base tw-my-2">
-          <SlideLink {...talk} withHatenaBookmark={withHatenaBookmark} />
-        </li>
-      ))}
-    </ul>
-  </div>
-);
+const pinnedIds = new Set<(typeof talks)[number]["id"]>([
+  "frontendconf-hokkaido-2024",
+  "jsconfjp2022",
+  "jsconfjp2021",
+]);
+
+export const pinnedTalks = talks.filter((talk) => pinnedIds.has(talk.id));

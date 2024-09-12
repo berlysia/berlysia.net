@@ -20,6 +20,7 @@ export default berlysia(
       "promise/prefer-await-to-then": "off",
       "unicorn/no-useless-undefined": "off",
       "node/callback-return": "off",
+      "unicorn/numeric-separators-style": "off",
     },
   }
   // {

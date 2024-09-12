@@ -1,5 +1,5 @@
-import Card from "../../../../components/Card";
-import HatenaBookmarkCounter from "../../../../components/HatenaBookmarkCounter";
+import Card from "../../Card";
+import HatenaBookmarkCounter from "../../HatenaBookmarkCounter";
 
 export function ArticleLink({
   href,

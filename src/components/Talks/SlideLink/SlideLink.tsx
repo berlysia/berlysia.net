@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useCallback, useRef } from "react";
-import HatenaBookmarkCounter from "../../../../components/HatenaBookmarkCounter";
-import Card from "../../../../components/Card";
+import HatenaBookmarkCounter from "../../HatenaBookmarkCounter";
+import Card from "../../Card";
 
 export function SlideLink({
   eventTitle,
@@ -99,7 +99,7 @@ export function SlideLink({
               >
                 🔗
               </button>
-              {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions -- https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/issues/932 */}
+              {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions -- trust me */}
               <dialog
                 ref={dialogRef}
                 onClick={handleModalClose}
