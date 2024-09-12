@@ -1,4 +1,4 @@
-import HatenaBookmarkCounter from "../HatenaBookmarkCounter";
+import HatenaBookmarkCounter from "../../../../components/HatenaBookmarkCounter";
 
 export function ArticleLink({
   href,

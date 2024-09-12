@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { LinkMarbles } from "./LinkMarbles";
 
 export const Profile = () => (
@@ -21,36 +20,31 @@ export const Profile = () => (
         <h3 className="tw-my-1 tw-text-lg tw-font-bold">
           Web Developer (mainly frontend)
         </h3>
-        <ul className="tw-my-1">
-          <li>I love Web, browsers, and JavaScript.</li>
-          <li></li>
-        </ul>
+        <p className="tw-my-1">I love Web, browsers, and JavaScript.</p>
       </div>
       <div className="tw-my-1">
         <h3 className="tw-my-1 tw-text-lg tw-font-bold">
           Idol Producer (a fan of THE IDOLM@STER)
         </h3>
-        <ul className="tw-my-1">
-          <li>
-            PIC of{" "}
-            <a
-              className="tw-px-1 tw-inline"
-              href="https://idollist.idolmaster-official.jp/search/detail/20046"
-              style={{ backgroundColor: "#fbffb9" }}
-            >
-              Hinako Kita
-            </a>
-            ,{" "}
-            <a
-              className="tw-px-1 tw-inline"
-              href="https://idollist.idolmaster-official.jp/search/detail/30016"
-              style={{ backgroundColor: "#7f6575", color: "white" }}
-            >
-              Sayoko Takayama
-            </a>
-            .
-          </li>
-        </ul>
+        <p className="tw-my-1">
+          PIC of{" "}
+          <a
+            className="tw-px-1 tw-inline"
+            href="https://idollist.idolmaster-official.jp/search/detail/20046"
+            style={{ backgroundColor: "#fbffb9" }}
+          >
+            Hinako Kita
+          </a>
+          ,{" "}
+          <a
+            className="tw-px-1 tw-inline"
+            href="https://idollist.idolmaster-official.jp/search/detail/30016"
+            style={{ backgroundColor: "#7f6575", color: "white" }}
+          >
+            Sayoko Takayama
+          </a>
+          .
+        </p>
       </div>
       <LinkMarbles />
     </div>

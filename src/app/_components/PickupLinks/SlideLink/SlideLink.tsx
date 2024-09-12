@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useCallback, useRef } from "react";
-import HatenaBookmarkCounter from "../HatenaBookmarkCounter";
+import HatenaBookmarkCounter from "../../../../components/HatenaBookmarkCounter";
 
 export function SlideLink({
   eventTitle,
