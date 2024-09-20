@@ -52,14 +52,14 @@
     "eslint-config-next": "14.2.13",
     "jest": "29.7.0",
     "lint-staged": "15.2.10",
-    "npm-run-all2": "6.2.2",
+    "npm-run-all2": "6.2.3",
     "playwright": "1.47.1",
-    "postcss": "8.4.45",
+    "postcss": "8.4.47",
     "prettier": "3.3.3",
-    "tailwindcss": "3.4.10",
+    "tailwindcss": "3.4.12",
     "tailwindcss-logical": "^3.0.0",
     "tsx": "^4.0.0",
-    "typescript": "5.5.4"
+    "typescript": "5.6.2"
   },
   "dependencies": {
     "@builder.io/partytown": "^0.10.0",
