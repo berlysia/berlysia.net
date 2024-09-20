@@ -68,7 +68,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "clsx": "^2.0.0",
     "fs-extra": "^11.0.0",
-    "next": "14.2.8",
+    "next": "14.2.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rss-parser": "^3.12.0",
