@@ -1,30 +1,40 @@
+import type { CSSProperties, ReactNode } from "react";
+import {
+  BlogIcon,
+  GitHubIcon,
+  MastodonIcon,
+  TwitterIcon,
+} from "../../../components/Icons";
+
+const iconClasses = "tw-bs-5";
+
 const MARBLES: Array<{
-  title: string;
+  title: ReactNode;
   url: string;
   label: string;
 }> = [
   {
-    title: "Twitter",
+    title: <TwitterIcon className={iconClasses} />,
     url: "https://twitter.com/berlysia",
     label: "Twitter / berlysia",
   },
   {
-    title: "GitHub",
+    title: <GitHubIcon className={iconClasses} />,
     url: "https://github.com/berlysia",
     label: "GitHub / berlysia",
   },
   {
-    title: "Im@stodon",
+    title: <MastodonIcon className={iconClasses} />,
     url: "https://imastodon.net/@berlysia",
     label: "Im@stodon / berlysia",
   },
+  // {
+  //   title: "mstdn.jp",
+  //   url: "https://mstdn.jp/@berlysia",
+  //   label: "mstdn.jp / berlysia",
+  // },
   {
-    title: "mstdn.jp",
-    url: "https://mstdn.jp/@berlysia",
-    label: "mstdn.jp / berlysia",
-  },
-  {
-    title: "Blog",
+    title: <BlogIcon className={iconClasses} />,
     url: "https://blog.berlysia.net/all",
     label: "blog.berlysia.net",
   },
@@ -48,9 +58,9 @@ const MARBLES: Array<{
 export const LinkMarbles = () => (
   <ul className="tw-flex tw-gap-x-8 tw-gap-y-2 tw-plb-2 tw-flex-wrap tw-justify-center">
     {MARBLES.map((marble) => (
-      <li key={marble.title} className="tw-inline-block">
+      <li key={marble.label}>
         <a
-          className="tw-underline"
+          className="tw-rounded-md tw-text-blue-600 visited:tw-text-gray-600 hover:tw-bg-gray-200 focus:tw-bg-gray-200"
           rel="noreferrer"
           target="_blank"
           href={marble.url}

@@ -4,7 +4,7 @@
   "description": "",
   "author": "berlysia <berlysia@gmail.com>",
   "main": "index.js",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "lint-staged": {
     "*.{[jt]s,[jt]sx,[cm][jt]s}": [
       "eslint --fix",

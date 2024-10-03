@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import Card from "../../../components/Card";
 import Link from "../../../components/LinkWithTransition";
 import { LinkMarbles } from "./LinkMarbles";
@@ -6,9 +7,9 @@ import styles from "./style.module.css";
 export const Profile = (props: {
   readonly descriptionFor?: "imas" | "tech";
 }) => (
-  <div className="tw-flex-1">
+  <div className={clsx(styles.root, "tw-flex-1")}>
     <GenreSwitcher />
-    <Card className={styles.root}>
+    <Card>
       <div className="tw-flex tw-p-4 tw-flex-wrap tw-justify-center tw-items-start">
         <div className="tw-flex-shrink-0 tw-flex tw-items-center tw-justify-start tw-p-1">
           {/* // eslint-disable-next-line @next/next/no-img-element -- unopt */}
@@ -33,7 +34,7 @@ export const Profile = (props: {
         </div>
       </div>
     </Card>
-    {!props.descriptionFor && <LinkMarbles />}
+    <LinkMarbles />
   </div>
 );
 
