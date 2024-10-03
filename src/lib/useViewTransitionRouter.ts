@@ -3,7 +3,7 @@
 import { useTransition, useEffect, useLayoutEffect, useRef } from "react";
 import { useRouter as useNextRouter, usePathname } from "next/navigation";
 import { startViewTransition } from "./startViewTransition";
-import { PromiseWithResolvers } from "./PromiseWithResolvers";
+import { PromiseWithResolversPonyfill } from "./PromiseWithResolvers";
 
 export default function useViewTransitionRouter(): ReturnType<
   typeof useNextRouter
@@ -13,7 +13,7 @@ export default function useViewTransitionRouter(): ReturnType<
 
   const promiseCallbacks = useRef<Record<
     "resolve" | "reject",
-    (value: unknown) => unknown
+    (value: any) => void
   > | null>(null);
 
   useLayoutEffect(() => {
@@ -40,10 +40,10 @@ export default function useViewTransitionRouter(): ReturnType<
           router.push(...args);
           return Promise.resolve();
         }
-        const deferred = PromiseWithResolvers();
+        const deferred = PromiseWithResolversPonyfill();
         promiseCallbacks.current = deferred;
         router.push(...args);
-        return deferred.promise as Promise<void>;
+        return deferred.promise;
       });
     },
     replace: (...args: Parameters<typeof router.replace>) => {

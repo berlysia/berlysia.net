@@ -1,6 +1,6 @@
 "use client";
 export function startViewTransition(
-  cb: () => void | Promise<void>,
+  cb: () => any,
   skip?: boolean
 ): ReturnType<Document["startViewTransition"]> {
   if (skip || !document.startViewTransition) {
@@ -15,6 +15,9 @@ export function startViewTransition(
       ready,
       finished: done,
       updateCallbackDone: done,
+      skipTransition() {
+        /*noop*/
+      },
     };
   }
   return document.startViewTransition(cb);

@@ -1,8 +1,8 @@
 "use client";
-export function PromiseWithResolvers<T>() {
+export function PromiseWithResolversPonyfill<T>(): PromiseWithResolvers<T> {
   if (Promise.withResolvers) return Promise.withResolvers<T>();
   // eslint-disable-next-line @typescript-eslint/init-declarations -- this is polyfill
-  let resolve: (value: T) => void;
+  let resolve: (value: T | PromiseLike<T>) => void;
   // eslint-disable-next-line @typescript-eslint/init-declarations -- this is polyfill
   let reject: (reason?: any) => void;
   // eslint-disable-next-line promise/avoid-new -- this is polyfill
