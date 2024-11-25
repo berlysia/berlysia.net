@@ -11,6 +11,18 @@ export type Talk = {
 
 export const talks: readonly Talk[] = [
   {
+    id: "jsconfjp2024",
+    eventTitle: "JSConf JP 2024",
+    eventLink: "https://jsconf.jp/2024/",
+    talkTitle:
+      "JavaScriptのモジュール解決の相互運用性 / Interoperability of Module Resolutions in JavaScript",
+    talkLink: "https://jsconf.jp/2024/talk/berlysia/",
+    slideLink:
+      "https://speakerdeck.com/berlysia/interoperability-of-module-resolutions-in-javascript",
+    pubDateString: "2024/12/23",
+    talkArchiveLink: "https://www.youtube.com/live/2BXwigWGjWQ?t=19139s",
+  },
+  {
     id: "wdc2024",
     eventTitle: "Web Developer Conference 2024",
     eventLink: "https://web-study.connpass.com/event/321711/",
@@ -97,6 +109,7 @@ export const talks: readonly Talk[] = [
 ] as const;
 
 const pinnedIds = new Set<(typeof talks)[number]["id"]>([
+  "jsconfjp2024",
   "frontendconf-hokkaido-2024",
   "jsconfjp2022",
   "jsconfjp2021",
