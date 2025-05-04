@@ -1606,12 +1606,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:22.14.1":
-  version: 22.14.1
-  resolution: "@types/node@npm:22.14.1"
+"@types/node@npm:22.15.3":
+  version: 22.15.3
+  resolution: "@types/node@npm:22.15.3"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10c0/d49c4d00403b1c2348cf0701b505fd636d80aabe18102105998dc62fdd36dcaf911e73c7a868c48c21c1022b825c67b475b65b1222d84b704d8244d152bb7f86
+  checksum: 10c0/2879f012d1aeba0bfdb5fed80d165f4f2cb3d1f2e1f98a24b18d4a211b4ace7d64bf2622784c78355982ffc1081ba79d0934efc2fb8353913e5871a63609661f
   languageName: node
   linkType: hard
 
@@ -1629,12 +1629,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.3.6":
-  version: 18.3.6
-  resolution: "@types/react-dom@npm:18.3.6"
+"@types/react-dom@npm:18.3.7":
+  version: 18.3.7
+  resolution: "@types/react-dom@npm:18.3.7"
   peerDependencies:
     "@types/react": ^18.0.0
-  checksum: 10c0/e77ac076096bd4b2e0a99130c47959762a927e536b83412e470ac5198d4b8d111cfd787ff2ab7c22bc39c114c0c5fef80046ea0cccb02a655e021a435859314a
+  checksum: 10c0/8bd309e2c3d1604a28a736a24f96cbadf6c05d5288cfef8883b74f4054c961b6b3a5e997fd5686e492be903c8f3380dba5ec017eff3906b1256529cd2d39603e
   languageName: node
   linkType: hard
 
@@ -2521,9 +2521,9 @@ __metadata:
     "@storybook/react": "npm:8.6.12"
     "@tsconfig/next": "npm:^2.0.1"
     "@types/fs-extra": "npm:11.0.4"
-    "@types/node": "npm:22.14.1"
+    "@types/node": "npm:22.15.3"
     "@types/react": "npm:18.3.20"
-    "@types/react-dom": "npm:18.3.6"
+    "@types/react-dom": "npm:18.3.7"
     autoprefixer: "npm:10.4.21"
     clsx: "npm:^2.0.0"
     del-cli: "npm:5.1.0"
