@@ -2,6 +2,15 @@ import type { Article } from "../reader";
 
 const articles: Article[] = [
   {
+    title: "［見果てぬ夢］を受容する",
+    link: "https://blog.berlysia.net/entry/2025-04-06-accepting-the-mihatenu-yume",
+    siteUrl: "https://blog.berlysia.net/",
+    siteTitle: "blog.berlysia.net",
+    kind: "remote",
+    author: "berlysia",
+    pubDate: 1743951300000,
+  },
+  {
     title:
       "喜多日菜子が『ガールズ・イン・ザ・フロンティア』を歌うとはどういうことか",
     link: "https://berlysia.hatenablog.com/entry/2024/09/20/201052",
