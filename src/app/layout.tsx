@@ -1,4 +1,4 @@
-import { Partytown } from "@builder.io/partytown/react";
+import { Partytown } from "@qwik.dev/partytown/react";
 import type { ReactNode } from "react";
 import { Lato, Noto_Sans_JP } from "next/font/google";
 import Script from "next/script";

@@ -18,6 +18,7 @@ export function startViewTransition(
       skipTransition() {
         /*noop*/
       },
+      types: new Set(),
     };
   }
   return document.startViewTransition(cb);

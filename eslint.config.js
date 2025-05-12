@@ -1,16 +1,12 @@
-import { dirname } from "node:path";
-import { fileURLToPath } from "node:url";
 import berlysia from "@berlysia/eslint-config";
 // import nextPlugin from "@next/eslint-plugin-next";
-
-const currentDir = dirname(fileURLToPath(import.meta.url));
 
 export default berlysia(
   {
     typescript: {
       parserOptions: {
         project: "./tsconfig.json",
-        tsconfigRootDir: currentDir,
+        tsconfigRootDir: import.meta.dirname,
       },
     },
   },
@@ -22,6 +18,9 @@ export default berlysia(
       "node/callback-return": "off",
       "unicorn/numeric-separators-style": "off",
     },
+  },
+  {
+    ignores: ["**/*.d.ts"]
   }
   // {
   //   plugins: {
