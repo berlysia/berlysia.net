@@ -5,16 +5,15 @@ export function PromiseWithResolversPonyfill<T>(): PromiseWithResolvers<T> {
   let resolve: (value: T | PromiseLike<T>) => void;
   // eslint-disable-next-line @typescript-eslint/init-declarations -- this is polyfill
   let reject: (reason?: any) => void;
-  // eslint-disable-next-line promise/avoid-new -- this is polyfill
   const promise = new Promise<T>((res, rej) => {
     resolve = res;
     reject = rej;
   });
 
   return {
-    // @ts-expect-error
+    // @ts-expect-error -- this is polyfill
     resolve,
-    // @ts-expect-error
+    // @ts-expect-error -- this is polyfill
     reject,
     promise,
   };

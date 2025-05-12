@@ -3,8 +3,6 @@ import path from "node:path";
 import { ensureDir } from "fs-extra";
 import Parser from "rss-parser";
 import * as feeds from "./feeds.js";
-// eslint-disable-next-line @typescript-eslint/prefer-ts-expect-error -- tsconfig間で結果が異なるため
-// @ts-ignore -- import assertionがエディタ用には使えない設定だがスクリプト側には必須
 import old_tech from "./old_tech.json" assert { type: "json" };
 
 const SEEDS_DIR = path.resolve(process.cwd(), "src", "seeds");
