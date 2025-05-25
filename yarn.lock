@@ -1377,13 +1377,13 @@ __metadata:
   linkType: hard
 
 "@qwik.dev/partytown@npm:^0.11.0":
-  version: 0.11.0
-  resolution: "@qwik.dev/partytown@npm:0.11.0"
+  version: 0.11.1
+  resolution: "@qwik.dev/partytown@npm:0.11.1"
   dependencies:
     dotenv: "npm:^16.4.7"
   bin:
     partytown: bin/partytown.cjs
-  checksum: 10c0/f09a3dcfe32959e05fe79e1d171c65979b5ac1ce94e1b6dc27a45a3e6826091210df31bced4c06821c6146cb36dd23cd7011fcff9c65c91d8da2bfb33db09682
+  checksum: 10c0/252ff95214390e03ab8c718dd55991df55d872f5da9f2a81d2734a67bccc814950c6edf45bd640b33b9330419a37f28e5acf4742acb641020902ca2efa2eb764
   languageName: node
   linkType: hard
 
@@ -9860,8 +9860,8 @@ __metadata:
   linkType: hard
 
 "zod@npm:^3.19.1, zod@npm:^3.23.8, zod@npm:^3.24.2":
-  version: 3.24.4
-  resolution: "zod@npm:3.24.4"
-  checksum: 10c0/ab3112f017562180a41a0f83d870b333677f7d6b77f106696c56894567051b91154714a088149d8387a4f50806a2520efcb666f108cd384a35c236a191186d91
+  version: 3.25.28
+  resolution: "zod@npm:3.25.28"
+  checksum: 10c0/557fb621813d128f8090c43de65f9e8661ce9bd8bd29d7adc6b38b0a79e14729a8926e28a2e6eee2fa0ec0ea390cc549363f50235e8f45d2e4771906d1f87b20
   languageName: node
   linkType: hard
