@@ -11,11 +11,20 @@ export type Talk = {
 
 export const talks: readonly Talk[] = [
   {
+    id: "tskaigi-2025",
+    eventTitle: "TSKaigi 2025",
+    eventLink: "https://2025.tskaigi.org/",
+    talkTitle: "TypeScriptネイティブ移植観察レポート TSKaigi 2025",
+    talkLink: "https://2025.tskaigi.org/talks/berlysia",
+    slideLink:
+      "https://speakerdeck.com/berlysia/typescript-native-porting-observation-tskaigi-2025",
+    pubDateString: "2025/05/24",
+  },
+  {
     id: "noren-ts-vol1",
     eventTitle: "noren.ts #1 〜TypeScriptのエラーハンドリングを極める〜",
     eventLink: "https://dinii.connpass.com/event/348179/",
-    talkTitle:
-      "「どう扱うか」で設計するエラーハンドリング",
+    talkTitle: "「どう扱うか」で設計するエラーハンドリング",
     talkLink: "https://dinii.connpass.com/event/348179/",
     slideLink:
       "https://speakerdeck.com/berlysia/designing-error-handling-based-on-how-to-handle-it",
@@ -25,8 +34,7 @@ export const talks: readonly Talk[] = [
     id: "meguro-es-vol29",
     eventTitle: "Meguro.es #29",
     eventLink: "https://meguroes.connpass.com/event/342717/",
-    talkTitle:
-      "バレルファイル 使っていいときわるいとき",
+    talkTitle: "バレルファイル 使っていいときわるいとき",
     talkLink: "https://meguroes.connpass.com/event/342717/",
     slideLink:
       "https://speakerdeck.com/berlysia/barrel-files-when-to-use-them-and-when-not-to",
@@ -36,8 +44,7 @@ export const talks: readonly Talk[] = [
     id: "browser-and-ui-vol1",
     eventTitle: "Browser and UI #1 CSS",
     eventLink: "https://browser-and-ui.connpass.com/event/341857/",
-    talkTitle:
-      "縦から目線のCSS",
+    talkTitle: "縦から目線のCSS",
     talkLink: "https://browser-and-ui.connpass.com/event/341857/",
     pubDateString: "2025/02/21",
   },
@@ -140,6 +147,7 @@ export const talks: readonly Talk[] = [
 ] as const;
 
 const pinnedIds = new Set<(typeof talks)[number]["id"]>([
+  "tskaigi-2025",
   "noren-ts-vol1",
   "jsconfjp2024",
   "frontendconf-hokkaido-2024",
