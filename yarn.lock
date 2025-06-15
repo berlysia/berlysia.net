@@ -2628,7 +2628,7 @@ __metadata:
     next: "npm:14.2.29"
     npm-run-all2: "npm:6.2.6"
     playwright: "npm:1.48.2"
-    postcss: "npm:8.5.4"
+    postcss: "npm:8.5.5"
     prettier: "npm:3.5.3"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
@@ -7569,7 +7569,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.5.4, postcss@npm:^8.0.9, postcss@npm:^8.4.47":
+"postcss@npm:8.5.5":
+  version: 8.5.5
+  resolution: "postcss@npm:8.5.5"
+  dependencies:
+    nanoid: "npm:^3.3.11"
+    picocolors: "npm:^1.1.1"
+    source-map-js: "npm:^1.2.1"
+  checksum: 10c0/6415873fab84de05c2d8fd18f72ea6654bca437bb4b9f02ca819c438501e4b3a450023e575e17587c6eaa5bedddaaa4dad3af210f5cf166e30cec09cac58baf8
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.0.9, postcss@npm:^8.4.47":
   version: 8.5.4
   resolution: "postcss@npm:8.5.4"
   dependencies:
@@ -8976,8 +8987,8 @@ __metadata:
   linkType: hard
 
 "tsx@npm:^4.0.0":
-  version: 4.19.4
-  resolution: "tsx@npm:4.19.4"
+  version: 4.20.3
+  resolution: "tsx@npm:4.20.3"
   dependencies:
     esbuild: "npm:~0.25.0"
     fsevents: "npm:~2.3.3"
@@ -8987,7 +8998,7 @@ __metadata:
       optional: true
   bin:
     tsx: dist/cli.mjs
-  checksum: 10c0/f7b8d44362343fbde1f2ecc9832d243a450e1168dd09702a545ebe5f699aa6912e45b431a54b885466db414cceda48e5067b36d182027c43b2c02a4f99d8721e
+  checksum: 10c0/6ff0d91ed046ec743fac7ed60a07f3c025e5b71a5aaf58f3d2a6b45e4db114c83e59ebbb078c8e079e48d3730b944a02bc0de87695088aef4ec8bbc705dc791b
   languageName: node
   linkType: hard
 
@@ -9565,8 +9576,8 @@ __metadata:
   linkType: hard
 
 "zod@npm:^3.19.1, zod@npm:^3.23.8, zod@npm:^3.24.2":
-  version: 3.25.56
-  resolution: "zod@npm:3.25.56"
-  checksum: 10c0/3800f01d4b1df932b91354eb1e648f69cc7e5561549e6d2bf83827d930a5f33bbf92926099445f6fc1ebb64ca9c6513ef9ae5e5409cfef6325f354bcf6fc9a24
+  version: 3.25.64
+  resolution: "zod@npm:3.25.64"
+  checksum: 10c0/00d76093a999e377e4ffd037fa7185e861c35917e8c4272f514115c206a0654995168f57fb71708b11e0a9243206d988b7f63b543404e1796402e50d346a6bd7
   languageName: node
   linkType: hard
