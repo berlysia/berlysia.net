@@ -2628,7 +2628,7 @@ __metadata:
     next: "npm:14.2.30"
     npm-run-all2: "npm:6.2.6"
     playwright: "npm:1.48.2"
-    postcss: "npm:8.5.5"
+    postcss: "npm:8.5.6"
     prettier: "npm:3.5.3"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
@@ -7569,14 +7569,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.5.5":
-  version: 8.5.5
-  resolution: "postcss@npm:8.5.5"
+"postcss@npm:8.5.6":
+  version: 8.5.6
+  resolution: "postcss@npm:8.5.6"
   dependencies:
     nanoid: "npm:^3.3.11"
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
-  checksum: 10c0/6415873fab84de05c2d8fd18f72ea6654bca437bb4b9f02ca819c438501e4b3a450023e575e17587c6eaa5bedddaaa4dad3af210f5cf166e30cec09cac58baf8
+  checksum: 10c0/5127cc7c91ed7a133a1b7318012d8bfa112da9ef092dddf369ae699a1f10ebbd89b1b9f25f3228795b84585c72aabd5ced5fc11f2ba467eedf7b081a66fad024
   languageName: node
   linkType: hard
 
@@ -9576,8 +9576,8 @@ __metadata:
   linkType: hard
 
 "zod@npm:^3.19.1, zod@npm:^3.23.8, zod@npm:^3.24.2":
-  version: 3.25.64
-  resolution: "zod@npm:3.25.64"
-  checksum: 10c0/00d76093a999e377e4ffd037fa7185e861c35917e8c4272f514115c206a0654995168f57fb71708b11e0a9243206d988b7f63b543404e1796402e50d346a6bd7
+  version: 3.25.67
+  resolution: "zod@npm:3.25.67"
+  checksum: 10c0/80a0cab3033272c4ab9312198081f0c4ea88e9673c059aa36dc32024906363729db54bdb78f3dc9d5529bd1601f74974d5a56c0a23e40c6f04a9270c9ff22336
   languageName: node
   linkType: hard
