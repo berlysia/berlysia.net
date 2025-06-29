@@ -1619,12 +1619,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:22.15.32":
-  version: 22.15.32
-  resolution: "@types/node@npm:22.15.32"
+"@types/node@npm:22.15.34":
+  version: 22.15.34
+  resolution: "@types/node@npm:22.15.34"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10c0/63a2fa52adf1134d1b3bee8b1862d4b8e4550fffc190551068d3d41a41d9e5c0c8f1cb81faa18767b260637360f662115c26c5e4e7718868ead40c4a57cbc0e3
+  checksum: 10c0/fb6a6b36daaa1b484aaba3d33b4d1e7b37ea993e29f20b7a676affa76ed6ff6acd2ded4d5003469bc8dbc815b3d224533b4560896037ef6d5b5d552721ab7d57
   languageName: node
   linkType: hard
 
@@ -2603,7 +2603,7 @@ __metadata:
     "@storybook/react": "npm:8.6.14"
     "@tsconfig/next": "npm:^2.0.1"
     "@types/fs-extra": "npm:11.0.4"
-    "@types/node": "npm:22.15.32"
+    "@types/node": "npm:22.15.34"
     "@types/react": "npm:18.3.23"
     "@types/react-dom": "npm:18.3.7"
     autoprefixer: "npm:10.4.21"
