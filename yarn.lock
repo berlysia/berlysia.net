@@ -1311,13 +1311,13 @@ __metadata:
   linkType: hard
 
 "@qwik.dev/partytown@npm:^0.11.0":
-  version: 0.11.1
-  resolution: "@qwik.dev/partytown@npm:0.11.1"
+  version: 0.11.2
+  resolution: "@qwik.dev/partytown@npm:0.11.2"
   dependencies:
     dotenv: "npm:^16.4.7"
   bin:
     partytown: bin/partytown.cjs
-  checksum: 10c0/252ff95214390e03ab8c718dd55991df55d872f5da9f2a81d2734a67bccc814950c6edf45bd640b33b9330419a37f28e5acf4742acb641020902ca2efa2eb764
+  checksum: 10c0/4d79df46cc8e5420275e49b21859d15ae11e012aab5e45100d891c75514aecb1cdbfd19880ebbf7305eb4a0d1a63b83958f6381590f731cde3500408d631ff62
   languageName: node
   linkType: hard
 
