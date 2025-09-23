@@ -3,7 +3,7 @@ import path from "node:path";
 import { ensureDir } from "fs-extra";
 import Parser from "rss-parser";
 import * as feeds from "./feeds.js";
-import old_tech from "./old_tech.json" assert { type: "json" };
+import old_tech from "./old_tech.json" with { type: "json" };
 
 const SEEDS_DIR = path.resolve(process.cwd(), "src", "seeds");
 
