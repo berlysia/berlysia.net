@@ -11,6 +11,15 @@ export type Talk = {
 
 export const talks: readonly Talk[] = [
   {
+    id: "fectokyo-2025",
+    eventTitle: "フロントエンドカンファレンス東京",
+    eventLink: "https://fec-tokyo.github.io/2025/",
+    talkTitle: "日本語縦書きWebの現在地 2025",
+    talkLink: "https://fec-tokyo.github.io/2025/",
+    slideLink: "https://slides.berlysia.net/state-of-japanese-vertical-writing-2025/",
+    pubDateString: "2025/09/21",
+  },
+  {
     id: "tskaigi-2025",
     eventTitle: "TSKaigi 2025",
     eventLink: "https://2025.tskaigi.org/",
@@ -147,6 +156,7 @@ export const talks: readonly Talk[] = [
 ] as const;
 
 const pinnedIds = new Set<(typeof talks)[number]["id"]>([
+  "fectokyo-2025",
   "tskaigi-2025",
   "noren-ts-vol1",
   "jsconfjp2024",
