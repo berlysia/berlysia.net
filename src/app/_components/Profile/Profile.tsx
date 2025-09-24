@@ -18,7 +18,7 @@ export const Profile = (props: {
             alt="avatar"
             width={128}
             height={128}
-            srcSet="avatar-384.webp 2x, avatar-640.webp 3x"
+            srcSet="/avatar-384.webp 2x, /avatar-640.webp 3x"
             decoding="async"
             className="tw-rounded-full tw-border-4 tw-border-keyColor-100"
           />
