@@ -769,7 +769,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/fontawesome-svg-core@npm:^6.2.1":
+"@fortawesome/fontawesome-svg-core@npm:6.7.2":
   version: 6.7.2
   resolution: "@fortawesome/fontawesome-svg-core@npm:6.7.2"
   dependencies:
@@ -778,7 +778,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/free-solid-svg-icons@npm:^6.2.1":
+"@fortawesome/free-solid-svg-icons@npm:6.7.2":
   version: 6.7.2
   resolution: "@fortawesome/free-solid-svg-icons@npm:6.7.2"
   dependencies:
@@ -787,7 +787,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/react-fontawesome@npm:^0.2.0":
+"@fortawesome/react-fontawesome@npm:0.2.6":
   version: 0.2.6
   resolution: "@fortawesome/react-fontawesome@npm:0.2.6"
   dependencies:
@@ -2638,9 +2638,9 @@ __metadata:
   resolution: "berlysia-net@workspace:."
   dependencies:
     "@berlysia/eslint-config": "npm:7.1.3"
-    "@fortawesome/fontawesome-svg-core": "npm:^6.2.1"
-    "@fortawesome/free-solid-svg-icons": "npm:^6.2.1"
-    "@fortawesome/react-fontawesome": "npm:^0.2.0"
+    "@fortawesome/fontawesome-svg-core": "npm:6.7.2"
+    "@fortawesome/free-solid-svg-icons": "npm:6.7.2"
+    "@fortawesome/react-fontawesome": "npm:0.2.6"
     "@playwright/test": "npm:1.48.2"
     "@qwik.dev/partytown": "npm:^0.11.0"
     "@storybook/react": "npm:8.6.14"
