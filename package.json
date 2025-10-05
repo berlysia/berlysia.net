@@ -62,9 +62,9 @@
     "typescript": "5.9.2"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.2.1",
-    "@fortawesome/free-solid-svg-icons": "^6.2.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@fortawesome/fontawesome-svg-core": "6.7.2",
+    "@fortawesome/free-solid-svg-icons": "6.7.2",
+    "@fortawesome/react-fontawesome": "0.2.6",
     "@qwik.dev/partytown": "^0.11.0",
     "clsx": "^2.0.0",
     "fs-extra": "^11.0.0",
