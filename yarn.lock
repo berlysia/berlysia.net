@@ -1327,7 +1327,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@qwik.dev/partytown@npm:^0.11.0":
+"@qwik.dev/partytown@npm:0.11.2":
   version: 0.11.2
   resolution: "@qwik.dev/partytown@npm:0.11.2"
   dependencies:
@@ -1480,7 +1480,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsconfig/next@npm:^2.0.1":
+"@tsconfig/next@npm:2.0.3":
   version: 2.0.3
   resolution: "@tsconfig/next@npm:2.0.3"
   checksum: 10c0/57aea3cf6ceedd3dae6713180559211b02a453668fd01f40e197759b6fc583eb11a3acc57a39d237c8c3e8e5fdcb243d3d761b9713c7ded45af071399fb34f11
@@ -2642,19 +2642,19 @@ __metadata:
     "@fortawesome/free-solid-svg-icons": "npm:6.7.2"
     "@fortawesome/react-fontawesome": "npm:0.2.6"
     "@playwright/test": "npm:1.48.2"
-    "@qwik.dev/partytown": "npm:^0.11.0"
+    "@qwik.dev/partytown": "npm:0.11.2"
     "@storybook/react": "npm:8.6.14"
-    "@tsconfig/next": "npm:^2.0.1"
+    "@tsconfig/next": "npm:2.0.3"
     "@types/fs-extra": "npm:11.0.4"
     "@types/node": "npm:22.18.6"
     "@types/react": "npm:18.3.24"
     "@types/react-dom": "npm:18.3.7"
     autoprefixer: "npm:10.4.21"
-    clsx: "npm:^2.0.0"
+    clsx: "npm:2.1.1"
     del-cli: "npm:6.0.0"
     eslint: "npm:9.35.0"
     eslint-config-next: "npm:14.2.33"
-    fs-extra: "npm:^11.0.0"
+    fs-extra: "npm:11.3.2"
     jest: "npm:29.7.0"
     lint-staged: "npm:15.5.2"
     next: "npm:14.2.33"
@@ -2662,14 +2662,14 @@ __metadata:
     playwright: "npm:1.48.2"
     postcss: "npm:8.5.6"
     prettier: "npm:3.6.2"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
-    rss-parser: "npm:^3.12.0"
+    react: "npm:18.3.1"
+    react-dom: "npm:18.3.1"
+    rss-parser: "npm:3.13.0"
     tailwindcss: "npm:3.4.17"
-    tailwindcss-logical: "npm:^3.0.0"
-    tsx: "npm:^4.0.0"
+    tailwindcss-logical: "npm:3.0.1"
+    tsx: "npm:4.20.6"
     typescript: "npm:5.9.2"
-    zod: "npm:^3.19.1"
+    zod: "npm:3.25.76"
   languageName: unknown
   linkType: soft
 
@@ -2980,7 +2980,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clsx@npm:^2.0.0":
+"clsx@npm:2.1.1":
   version: 2.1.1
   resolution: "clsx@npm:2.1.1"
   checksum: 10c0/c4c8eb865f8c82baab07e71bfa8897c73454881c4f99d6bc81585aecd7c441746c1399d08363dc096c550cceaf97bd4ce1e8854e1771e9998d9f94c4fe075839
@@ -4493,7 +4493,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^11.0.0":
+"fs-extra@npm:11.3.2":
   version: 11.3.2
   resolution: "fs-extra@npm:11.3.2"
   dependencies:
@@ -7426,7 +7426,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^18.2.0":
+"react-dom@npm:18.3.1":
   version: 18.3.1
   resolution: "react-dom@npm:18.3.1"
   dependencies:
@@ -7452,7 +7452,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^18.2.0":
+"react@npm:18.3.1":
   version: 18.3.1
   resolution: "react@npm:18.3.1"
   dependencies:
@@ -7750,7 +7750,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rss-parser@npm:^3.12.0":
+"rss-parser@npm:3.13.0":
   version: 3.13.0
   resolution: "rss-parser@npm:3.13.0"
   dependencies:
@@ -8421,7 +8421,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss-logical@npm:^3.0.0":
+"tailwindcss-logical@npm:3.0.1":
   version: 3.0.1
   resolution: "tailwindcss-logical@npm:3.0.1"
   dependencies:
@@ -8610,7 +8610,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsx@npm:^4.0.0":
+"tsx@npm:4.20.6":
   version: 4.20.6
   resolution: "tsx@npm:4.20.6"
   dependencies:
@@ -9178,7 +9178,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:^3.19.1":
+"zod@npm:3.25.76":
   version: 3.25.76
   resolution: "zod@npm:3.25.76"
   checksum: 10c0/5718ec35e3c40b600316c5b4c5e4976f7fee68151bc8f8d90ec18a469be9571f072e1bbaace10f1e85cf8892ea12d90821b200e980ab46916a6166a4260a983c
