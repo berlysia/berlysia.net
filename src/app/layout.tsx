@@ -41,6 +41,8 @@ export default function Layout({ children }: Props) {
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
+        <meta name="Hatena::Bookmark" content="nocomment" />
+        <link rel="author" href="https://www.hatena.ne.jp/berlysia/" />
         {gaEnabled && (
           <>
             <Partytown forward={["dataLayer.push"]} />
