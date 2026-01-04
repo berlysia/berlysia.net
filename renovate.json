@@ -1,3 +1,25 @@
 {
-  "extends": ["github>berlysia/renovate-config"]
+  "extends": ["github>berlysia/renovate-config"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["^package\\.json$", "^\\.github/workflows/.*\\.yml$"],
+      "matchStrings": [
+        "mcr\\.microsoft\\.com/playwright:(?<currentValue>v[0-9]+\\.[0-9]+\\.[0-9]+)-jammy"
+      ],
+      "depNameTemplate": "mcr.microsoft.com/playwright",
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "regex:^v?(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)$"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "playwright",
+        "@playwright/test",
+        "mcr.microsoft.com/playwright"
+      ],
+      "groupName": "playwright"
+    }
+  ]
 }
