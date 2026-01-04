@@ -6,7 +6,7 @@ const config = defineConfig({
   testDir: "test/vrt",
   fullyParallel: true,
   webServer: {
-    command: "yarn dev",
+    command: "pnpm dev",
     port: 3000,
     reuseExistingServer: true,
   },

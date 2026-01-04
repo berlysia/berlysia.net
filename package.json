@@ -28,8 +28,8 @@
     "format:check": "prettier --check '**/*.{json,md,js,ts,jsx,tsx}'",
     "test": "jest",
     "test:vrt:ci": "playwright test",
-    "test:vrt": "docker run --rm --user $(id -u):$(id -g) --volume $(pwd):/workdir/ --workdir /workdir/ -it mcr.microsoft.com/playwright:v1.56.1-jammy /bin/bash -c 'yarn test:vrt:ci'",
-    "test:vrt:update": "docker run --rm --user $(id -u):$(id -g) --volume $(pwd):/workdir/ --workdir /workdir/ -it mcr.microsoft.com/playwright:v1.56.1-jammy /bin/bash -c 'yarn test:vrt:ci -u'",
+    "test:vrt": "docker run --rm --user $(id -u):$(id -g) --volume $(pwd):/workdir/ --workdir /workdir/ -it mcr.microsoft.com/playwright:v1.56.1-jammy /bin/bash -c 'pnpm test:vrt:ci'",
+    "test:vrt:update": "docker run --rm --user $(id -u):$(id -g) --volume $(pwd):/workdir/ --workdir /workdir/ -it mcr.microsoft.com/playwright:v1.56.1-jammy /bin/bash -c 'pnpm test:vrt:ci -u'",
     "clean": "del dist",
     "typecheck": "tsc --noEmit",
     "prepare": "git config --local core.hooksPath .githooks && echo 'githooks installed' || echo 'githooks install failed'",
@@ -74,5 +74,5 @@
     "rss-parser": "3.13.0",
     "zod": "3.25.76"
   },
-  "packageManager": "yarn@4.9.4"
+  "packageManager": "pnpm@10.20.0"
 }
