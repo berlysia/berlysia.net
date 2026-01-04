@@ -20,7 +20,7 @@ export default berlysia(
     },
   },
   {
-    ignores: ["**/*.d.ts"]
+    ignores: ["**/*.d.ts"],
   }
   // {
   //   plugins: {

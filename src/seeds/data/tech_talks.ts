@@ -16,7 +16,8 @@ export const talks: readonly Talk[] = [
     eventLink: "https://fec-tokyo.github.io/2025/",
     talkTitle: "日本語縦書きWebの現在地 2025",
     talkLink: "https://fec-tokyo.github.io/2025/",
-    slideLink: "https://slides.berlysia.net/state-of-japanese-vertical-writing-2025/",
+    slideLink:
+      "https://slides.berlysia.net/state-of-japanese-vertical-writing-2025/",
     pubDateString: "2025/09/21",
   },
   {
