@@ -24,7 +24,8 @@ export default function ReactTokyoFes2026() {
                 React Tokyo フェス 2026
               </h1>
               <p className="tw-text-lg tw-mb-2">
-                React Tokyo フェス 2026 での発表ポスターからリンクするページです。
+                React Tokyo フェス 2026
+                での発表ポスターからリンクするページです。
               </p>
             </div>
 
@@ -32,8 +33,18 @@ export default function ReactTokyoFes2026() {
               <h2 className="tw-text-2xl tw-font-bold tw-mb-2">関連リンク</h2>
               <div className="tw-flex tw-flex-col tw-gap-2">
                 <dl>
-                  <dt><a href="https://developer.mozilla.org/ja/docs/Web/CSS/Guides/Logical_properties_and_values" target="_blank" rel="noreferrer">CSS 論理的プロパティと値 - CSS | MDN</a></dt>
-                  <dd className="tw-ml-4">MDN の論理的プロパティと値に関するガイド</dd>
+                  <dt>
+                    <a
+                      href="https://developer.mozilla.org/ja/docs/Web/CSS/Guides/Logical_properties_and_values"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      CSS 論理的プロパティと値 - CSS | MDN
+                    </a>
+                  </dt>
+                  <dd className="tw-ml-4">
+                    MDN の論理的プロパティと値に関するガイド
+                  </dd>
                 </dl>
               </div>
             </div>

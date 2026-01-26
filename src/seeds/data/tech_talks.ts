@@ -23,7 +23,8 @@ export const talks: readonly Talk[] = [
     eventTitle: "BuriKaigi 2026",
     eventLink: "https://fortee.jp/burikaigi-2026",
     talkTitle: "Webサイトで縦書きを使う、縦書きのWebサイトを作る",
-    talkLink: "https://fortee.jp/burikaigi-2026/proposal/62024ffd-e82b-479a-b6bf-8968564f21c8",
+    talkLink:
+      "https://fortee.jp/burikaigi-2026/proposal/62024ffd-e82b-479a-b6bf-8968564f21c8",
     slideLink:
       "https://slides.berlysia.net/burikaigi2026-use-vertical-writing-on-a-site-or-create-a-vertical-writing-site/",
     pubDateString: "2026/01/10",
@@ -34,7 +35,8 @@ export const talks: readonly Talk[] = [
     eventLink: "https://jsconf.jp/2025/",
     talkTitle: "縦書きWebの実用を支えるJavaScript",
     talkLink: "https://jsconf.jp/2025/en/talks/vertical-text-web-javascript",
-    slideLink: "https://slides.berlysia.net/jsconfjp2025-javascript-for-vertical-writing-on-the-web/",
+    slideLink:
+      "https://slides.berlysia.net/jsconfjp2025-javascript-for-vertical-writing-on-the-web/",
     pubDateString: "2025/11/16",
   },
   {
