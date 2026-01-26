@@ -11,6 +11,33 @@ export type Talk = {
 
 export const talks: readonly Talk[] = [
   {
+    id: "tpac_study",
+    eventTitle: "#tpac_study",
+    eventLink: "https://web-study.connpass.com/event/378948/",
+    talkTitle: "Revisiting Scope Between i18n and CSS",
+    talkLink: "https://web-study.connpass.com/event/378948/",
+    pubDateString: "2026/01/20",
+  },
+  {
+    id: "burikaigi2026",
+    eventTitle: "BuriKaigi 2026",
+    eventLink: "https://fortee.jp/burikaigi-2026",
+    talkTitle: "Webサイトで縦書きを使う、縦書きのWebサイトを作る",
+    talkLink: "https://fortee.jp/burikaigi-2026/proposal/62024ffd-e82b-479a-b6bf-8968564f21c8",
+    slideLink:
+      "https://slides.berlysia.net/burikaigi2026-use-vertical-writing-on-a-site-or-create-a-vertical-writing-site/",
+    pubDateString: "2026/01/10",
+  },
+  {
+    id: "jsconfjp2025",
+    eventTitle: "JSConf JP 2025",
+    eventLink: "https://jsconf.jp/2025/",
+    talkTitle: "縦書きWebの実用を支えるJavaScript",
+    talkLink: "https://jsconf.jp/2025/en/talks/vertical-text-web-javascript",
+    slideLink: "https://slides.berlysia.net/jsconfjp2025-javascript-for-vertical-writing-on-the-web/",
+    pubDateString: "2025/11/16",
+  },
+  {
     id: "fectokyo-2025",
     eventTitle: "フロントエンドカンファレンス東京",
     eventLink: "https://fec-tokyo.github.io/2025/",
@@ -157,6 +184,8 @@ export const talks: readonly Talk[] = [
 ] as const;
 
 const pinnedIds = new Set<(typeof talks)[number]["id"]>([
+  "burikaigi2026",
+  "jsconfjp2025",
   "fectokyo-2025",
   "tskaigi-2025",
   "noren-ts-vol1",
