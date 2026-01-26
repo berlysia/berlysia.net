@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import Card from "../../../components/Card";
-import Link from "../../../components/LinkWithTransition";
+import { GenreSwitcher } from "../../../components/GenreSwitcher";
 import { LinkMarbles } from "./LinkMarbles";
 import styles from "./style.module.css";
 
@@ -37,18 +37,6 @@ export const Profile = (props: {
     <LinkMarbles />
   </div>
 );
-
-function GenreSwitcher() {
-  return (
-    <div className="tw-flex tw-justify-center tw-leading-8 tw-text-lg">
-      <Link href="/tech">&lt;- tech</Link>
-      <span className="tw-mli-4"> / </span>
-      <Link href="/">🏠</Link>
-      <span className="tw-mli-4"> / </span>
-      <Link href="/imas">imas -&gt;</Link>
-    </div>
-  );
-}
 
 function GeneralDescription() {
   return (
