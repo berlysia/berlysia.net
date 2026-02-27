@@ -1,9 +1,12 @@
+import { resolve } from "node:path";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  experimental: {
-    typedRoutes: true,
+  turbopack: {
+    root: resolve(import.meta.dirname),
   },
+  typedRoutes: true,
   images: {
     unoptimized: true,
   },
