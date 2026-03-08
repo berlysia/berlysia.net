@@ -41,12 +41,12 @@
     "@berlysia/eslint-config": "7.2.0",
     "@playwright/test": "1.58.2",
     "@storybook/react": "8.6.15",
-    "@tsconfig/next": "2.0.5",
+    "@tsconfig/next": "2.0.6",
     "@types/fs-extra": "11.0.4",
     "@types/node": "24.10.13",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "autoprefixer": "10.4.24",
+    "autoprefixer": "10.4.27",
     "del-cli": "6.0.0",
     "eslint": "9.39.2",
     "eslint-config-next": "16.1.6",
@@ -74,5 +74,5 @@
     "rss-parser": "3.13.0",
     "zod": "3.25.76"
   },
-  "packageManager": "pnpm@10.29.3"
+  "packageManager": "pnpm@10.30.3"
 }
