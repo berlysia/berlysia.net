@@ -48,7 +48,7 @@
     "@types/react-dom": "19.2.3",
     "autoprefixer": "10.4.27",
     "del-cli": "6.0.0",
-    "eslint": "9.39.2",
+    "eslint": "9.39.4",
     "eslint-config-next": "16.1.6",
     "jest": "29.7.0",
     "lint-staged": "15.5.2",
