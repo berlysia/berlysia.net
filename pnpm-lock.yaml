@@ -18,8 +18,8 @@ importers:
         specifier: 0.2.6
         version: 0.2.6(@fortawesome/fontawesome-svg-core@6.7.2)(react@18.3.1)
       '@qwik.dev/partytown':
-        specifier: 0.11.2
-        version: 0.11.2
+        specifier: 0.13.2
+        version: 0.13.2
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -1037,8 +1037,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@qwik.dev/partytown@0.11.2':
-    resolution: {integrity: sha512-795y49CqBiKiwKAD+QBZlzlqEK275hVcazZ7wBPSfgC23L+vWuA7PJmMpgxojOucZHzYi5rAAQ+IP1I3BKVZxw==}
+  '@qwik.dev/partytown@0.13.2':
+    resolution: {integrity: sha512-Umls4bSkuzqLVcGvf8OgwIn/OldproSAbaQ/iYGe8VPYBpl2CaOSxabWwkeC72LDFqxVL0b0q8XlI8MuChDyzg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -5075,7 +5075,7 @@ snapshots:
     dependencies:
       playwright: 1.58.2
 
-  '@qwik.dev/partytown@0.11.2':
+  '@qwik.dev/partytown@0.13.2':
     dependencies:
       dotenv: 16.6.1
 
