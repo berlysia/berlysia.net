@@ -10,7 +10,7 @@ export const Talks = ({
 }) => (
   <ul className="tw-p-0">
     {talks.map((talk) => (
-      <li key={talk.talkLink} className="tw-text-base tw-my-2">
+      <li key={talk.id} className="tw-text-base tw-my-2">
         <SlideLink {...talk} withHatenaBookmark={withHatenaBookmark} />
       </li>
     ))}

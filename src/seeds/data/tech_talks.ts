@@ -11,6 +11,24 @@ export type Talk = {
 
 export const talks: readonly Talk[] = [
   {
+    id: "vertical-writing-study-4",
+    eventTitle: "#縦書き_study",
+    eventLink: "https://web-study.connpass.com/event/387935/",
+    talkTitle: "縦書きWebを身近なものにするために",
+    talkLink: "https://web-study.connpass.com/event/387935/",
+    slideLink: "https://slides.berlysia.net/vertical-writing-study-4/",
+    pubDateString: "2026/04/17",
+  },
+  {
+    id: "vertical-writing-study-1",
+    eventTitle: "#縦書き_study",
+    eventLink: "https://web-study.connpass.com/event/387935/",
+    talkTitle: "縦書きWebの現在地概略",
+    talkLink: "https://web-study.connpass.com/event/387935/",
+    slideLink: "https://slides.berlysia.net/vertical-writing-study-1/",
+    pubDateString: "2026/04/17",
+  },
+  {
     id: "tpac_study",
     eventTitle: "#tpac_study",
     eventLink: "https://web-study.connpass.com/event/378948/",
@@ -23,8 +41,7 @@ export const talks: readonly Talk[] = [
     eventTitle: "BuriKaigi 2026",
     eventLink: "https://fortee.jp/burikaigi-2026",
     talkTitle: "Webサイトで縦書きを使う、縦書きのWebサイトを作る",
-    talkLink:
-      "https://fortee.jp/burikaigi-2026/proposal/62024ffd-e82b-479a-b6bf-8968564f21c8",
+    talkLink: "https://fortee.jp/burikaigi-2026/proposal/62024ffd-e82b-479a-b6bf-8968564f21c8",
     slideLink:
       "https://slides.berlysia.net/burikaigi2026-use-vertical-writing-on-a-site-or-create-a-vertical-writing-site/",
     pubDateString: "2026/01/10",
@@ -45,8 +62,7 @@ export const talks: readonly Talk[] = [
     eventLink: "https://fec-tokyo.github.io/2025/",
     talkTitle: "日本語縦書きWebの現在地 2025",
     talkLink: "https://fec-tokyo.github.io/2025/",
-    slideLink:
-      "https://slides.berlysia.net/state-of-japanese-vertical-writing-2025/",
+    slideLink: "https://slides.berlysia.net/state-of-japanese-vertical-writing-2025/",
     pubDateString: "2025/09/21",
   },
   {
@@ -75,8 +91,7 @@ export const talks: readonly Talk[] = [
     eventLink: "https://meguroes.connpass.com/event/342717/",
     talkTitle: "バレルファイル 使っていいときわるいとき",
     talkLink: "https://meguroes.connpass.com/event/342717/",
-    slideLink:
-      "https://speakerdeck.com/berlysia/barrel-files-when-to-use-them-and-when-not-to",
+    slideLink: "https://speakerdeck.com/berlysia/barrel-files-when-to-use-them-and-when-not-to",
     pubDateString: "2025/02/27",
   },
   {
@@ -85,6 +100,7 @@ export const talks: readonly Talk[] = [
     eventLink: "https://browser-and-ui.connpass.com/event/341857/",
     talkTitle: "縦から目線のCSS",
     talkLink: "https://browser-and-ui.connpass.com/event/341857/",
+    slideLink: "https://slides.berlysia.net/css-from-vertical-world/",
     pubDateString: "2025/02/21",
   },
   {
@@ -103,8 +119,7 @@ export const talks: readonly Talk[] = [
     id: "wdc2024",
     eventTitle: "Web Developer Conference 2024",
     eventLink: "https://web-study.connpass.com/event/321711/",
-    talkTitle:
-      "1 分 de Web 標準 / CSS Logical Properties and Values について 1 分で",
+    talkTitle: "1 分 de Web 標準 / CSS Logical Properties and Values について 1 分で",
     talkLink: "https://web-study.connpass.com/event/321711/",
     slideLink: "https://twitter.com/berlysia/status/1832728610245095595",
     pubDateString: "2024/09/07",
@@ -124,8 +139,7 @@ export const talks: readonly Talk[] = [
     id: "jsconfjp2022",
     eventTitle: "JSConf JP 2022",
     eventLink: "https://jsconf.jp/2022/",
-    talkTitle:
-      "自然発生した実装パターンに、マイクロフロントエンドと名がつきました",
+    talkTitle: "自然発生した実装パターンに、マイクロフロントエンドと名がつきました",
     talkLink: "https://jsconf.jp/2022/talk/sponsor-talk-dwango",
     slideLink: "https://speakerdeck.com/berlysia/jsconf-jp-2022",
     pubDateString: "2022/11/26",
@@ -166,8 +180,7 @@ export const talks: readonly Talk[] = [
     eventTitle: "JSConf JP 2021",
     eventLink: "https://jsconf.jp/2021/",
     talkTitle: "Webフロントエンドのリプレースを支えるテストの考え方",
-    talkLink:
-      "https://jsconf.jp/2021/talk/testing-approach-to-support-web-front-end-replacement",
+    talkLink: "https://jsconf.jp/2021/talk/testing-approach-to-support-web-front-end-replacement",
     slideLink: "https://speakerdeck.com/berlysia/jsconf-jp-2021",
     pubDateString: "2021/11/27",
     talkArchiveLink:
@@ -186,6 +199,7 @@ export const talks: readonly Talk[] = [
 ] as const;
 
 const pinnedIds = new Set<(typeof talks)[number]["id"]>([
+  "vertical-writing-study-4",
   "burikaigi2026",
   "jsconfjp2025",
   "fectokyo-2025",
