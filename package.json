@@ -48,7 +48,7 @@
     "@tsconfig/next": "2.0.6",
     "@types/fs-extra": "11.0.4",
     "@types/node": "24.12.4",
-    "@types/react": "19.2.14",
+    "@types/react": "19.2.15",
     "@types/react-dom": "19.2.3",
     "autoprefixer": "10.5.0",
     "del-cli": "6.0.0",
