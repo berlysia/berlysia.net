@@ -21,14 +21,6 @@ jobs:
     container:
       image: mcr.microsoft.com/playwright:v1.63.0-jammy
     steps:
-      - id: env-key
-        run: echo "value=${{ runner.os }}-${{ env.NODE_VERSION }}" >> $GITHUB_OUTPUT
-      - id: lock-hash
-        run: echo "value=${{ hashFiles('package.json', '**/pnpm-lock.yaml') }}" >> $GITHUB_OUTPUT
-      - id: source-hash
-        run: echo "value=${{ hashFiles('*.[cm]js','*.js','src/**/*.[jt]s','src/**/*.[jt]sx') }}" >> $GITHUB_OUTPUT
-      - id: nextjs-cache-dir-path
-        run: echo "value=${{ github.workspace }}/.next/cache" >> $GITHUB_OUTPUT
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
       - uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v4.4.0
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
@@ -36,20 +28,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: "pnpm"
       - run: pnpm install
-      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
-        id: nextjs_cache_id
-        env:
-          cache-name: cache-nextjs
-        with:
-          path: |
-            ${{ steps.nextjs-cache-dir-path.outputs.value }}
-          key: ${{ steps.env-key.outputs.value }}-${{ env.cache-name }}-${{ steps.lock-hash.outputs.value }}-${{ steps.source-hash.outputs.value }}
-          restore-keys: |
-            ${{ steps.env-key.outputs.value }}-${{ env.cache-name }}-${{ steps.lock-hash.outputs.value }}-
-            ${{ steps.env-key.outputs.value }}-${{ env.cache-name }}-
       - run: pnpm build
-        env:
-          NODE_ENV: test
       - run: pnpm test:vrt:ci
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         if: failure()

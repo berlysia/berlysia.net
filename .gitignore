@@ -1,7 +1,4 @@
-out
 *.log
-.next
-next-env.d.ts
 .envrc
 .env*.local
 .now
@@ -152,6 +149,4 @@ typings/
 test-results
 dist
 
-.next
-public/~partytown
-src/seeds/.tmp
+app/seeds/.tmp

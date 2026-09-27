@@ -1,0 +1,67 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+:root {
+  --font-family-lato: "Lato";
+}
+
+/* Cross-document view transitions: plain <a> navigations between pages animate
+   without a client-side router. */
+@view-transition {
+  navigation: auto;
+}
+
+/* Shared across pages so the profile block morphs instead of cross-fading. */
+.profile-root {
+  view-transition-name: my-profile;
+}
+
+/* HonoX wraps each island in this element; keep it out of layout so islands
+   participate in their parent's flex/grid context like ordinary children. */
+honox-island {
+  display: contents;
+}
+
+html {
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow-y: scroll;
+
+  font-family:
+    var(--font-family-lato), "Helvetica Neue", "Helvetica",
+    "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Noto Sans CJK JP", YuGothic,
+    "Yu Gothic Medium", Meiryo, sans-serif;
+  color: #233;
+
+  @apply tw-text-base;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  @apply tw-bg-keyColor-50;
+}
+
+a {
+  &:any-link {
+    @apply tw-text-keyColor-600 tw-underline;
+  }
+
+  &:visited {
+    @apply tw-text-purple-800;
+  }
+
+  &,
+  &:visited {
+    &:active,
+    &:hover {
+      transition:
+        color 0.2s,
+        text-decoration 0.2s;
+      @apply tw-text-keyColor-600;
+    }
+  }
+}
