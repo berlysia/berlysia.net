@@ -1,6 +1,7 @@
 out
 *.log
 .next
+next-env.d.ts
 .envrc
 .env*.local
 .now
