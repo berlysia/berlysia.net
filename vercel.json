@@ -1,9 +1,0 @@
-{
-  "framework": null,
-  "buildCommand": "pnpm build",
-  "outputDirectory": "dist",
-  "cleanUrls": true,
-  "redirects": [
-    { "source": "/blog", "destination": "https://blog.berlysia.net" }
-  ]
-}

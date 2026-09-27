@@ -1,7 +1,6 @@
 *.log
 .envrc
 .env*.local
-.now
 public/~partytown
 
 .yarn/*
@@ -144,7 +143,6 @@ typings/
 .env
 
 .vscode
-.vercel
 
 test-results
 dist
