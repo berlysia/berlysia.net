@@ -1,0 +1,6 @@
+# Renovate regenerates the lockfile in its own environment, where the
+# user-level pnpm rc is absent. Keep the release-age gate in the repo so
+# transitive dependencies resolved there are held to the same 7-day rule.
+minimumReleaseAge: 10080
+minimumReleaseAgeExclude:
+  - "@berlysia/*"
