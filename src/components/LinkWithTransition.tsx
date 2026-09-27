@@ -9,6 +9,7 @@ function Link<T>({
   ...props
 }: Omit<NextLinkProps<T>, "href"> & {
   readonly href: Exclude<NextLinkProps<T>["href"], UrlObject>;
+  readonly children?: React.ReactNode;
 }) {
   const router = useViewTransitionRouter();
 
