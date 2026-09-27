@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { clsx } from "clsx";
 import type { Child } from "hono/jsx";
 
 export default function Card(props: {

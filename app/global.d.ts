@@ -1,3 +1,6 @@
+// Importing "hono" makes the block below an augmentation of it rather than a
+// new ambient module declaration.
+// oxlint-disable-next-line import/no-empty-named-blocks, unicorn/require-module-specifiers -- intentional side-effect-free type import
 import type {} from "hono";
 
 type Head = {

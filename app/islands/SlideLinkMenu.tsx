@@ -38,7 +38,7 @@ export default function SlideLinkMenu({
       >
         🔗
       </button>
-      {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions -- trust me */}
+      {/* oxlint-disable-next-line jsx-a11y/no-noninteractive-element-interactions -- backdrop click/keydown to light-dismiss the modal */}
       <dialog
         ref={dialogRef}
         onClick={handleModalClose}

@@ -61,6 +61,6 @@ export function getByGenre(genre: "imas" | "tech", count: number): Article[] {
       console.error(result.error.errors);
       return false;
     })
-    .sort((a, b) => b.pubDate - a.pubDate)
+    .toSorted((a, b) => b.pubDate - a.pubDate)
     .slice(0, count);
 }
