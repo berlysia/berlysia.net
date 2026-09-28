@@ -32,8 +32,8 @@ html {
 
   font-family:
     var(--font-family-lato), "Helvetica Neue", "Helvetica",
-    "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Noto Sans CJK JP", YuGothic,
-    "Yu Gothic Medium", Meiryo, sans-serif;
+    "Hiragino Kaku Gothic ProN", YuGothic, "Yu Gothic Medium", Meiryo,
+    sans-serif;
   color: #233;
 
   @apply tw-text-base;
