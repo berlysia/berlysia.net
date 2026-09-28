@@ -7,69 +7,60 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "run-s build:seed build:partytown build:next",
+    "dev": "vite",
+    "build": "run-s build:seed build:partytown build:client build:ssg",
+    "build:seed": "tsx --tsconfig ./tsconfig.script.json app/seeds/build.ts",
     "build:partytown": "partytown copylib public/~partytown",
-    "build:seed": "tsx --tsconfig ./tsconfig.script.json src/seeds/build.ts",
-    "build:next": "next build",
-    "start": "next start",
-    "lint": "eslint 'src/**/*.{js,ts,jsx,tsx}'",
-    "lint:fix": "npm-run-all 'lint -- --fix'",
-    "format": "prettier --write '**/*.{json,md,js,ts,jsx,tsx}'",
-    "format:check": "prettier --check '**/*.{json,md,js,ts,jsx,tsx}'",
+    "build:client": "vite build --mode client",
+    "build:ssg": "vite build",
+    "preview": "vite preview --outDir dist",
+    "lint": "oxlint --deny-warnings",
+    "lint:fix": "oxlint --fix",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
     "test": "jest --passWithNoTests",
     "test:vrt:ci": "playwright test",
     "test:vrt": "docker run --rm --user $(id -u):$(id -g) --volume $(pwd):/workdir/ --workdir /workdir/ -it mcr.microsoft.com/playwright:v1.63.0-jammy /bin/bash -c 'pnpm test:vrt:ci'",
     "test:vrt:update": "docker run --rm --user $(id -u):$(id -g) --volume $(pwd):/workdir/ --workdir /workdir/ -it mcr.microsoft.com/playwright:v1.63.0-jammy /bin/bash -c 'pnpm test:vrt:ci -u'",
     "typecheck": "tsc --noEmit",
     "prepare": "git config --local core.hooksPath .githooks && echo 'githooks installed' || echo 'githooks install failed'",
-    "precommit": "lint-staged",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "precommit": "lint-staged"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "6.7.2",
-    "@fortawesome/free-solid-svg-icons": "6.7.2",
-    "@fortawesome/react-fontawesome": "0.2.6",
     "@qwik.dev/partytown": "0.14.4",
     "clsx": "2.1.1",
     "fs-extra": "11.4.0",
-    "next": "16.3.5",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "hono": "4.13.8",
     "rss-parser": "3.13.0",
     "zod": "3.25.76"
   },
   "devDependencies": {
-    "@berlysia/eslint-config": "7.2.0",
+    "@hono/vite-ssg": "0.3.3",
     "@playwright/test": "1.63.0",
-    "@storybook/react": "10.6.0",
-    "@tsconfig/next": "2.0.6",
     "@types/fs-extra": "11.0.4",
     "@types/node": "24.13.6",
-    "@types/react": "19.3.0",
-    "@types/react-dom": "19.3.0",
     "autoprefixer": "10.6.1",
-    "eslint": "10.11.0",
-    "eslint-config-next": "16.3.5",
+    "honox": "0.1.61",
     "jest": "29.7.0",
     "lint-staged": "17.5.1",
     "npm-run-all2": "6.2.6",
+    "oxfmt": "0.68.0",
+    "oxlint": "1.83.0",
     "playwright": "1.63.0",
     "postcss": "8.5.28",
-    "prettier": "3.9.8",
     "tailwindcss": "3.4.19",
     "tailwindcss-logical": "3.0.1",
     "tsx": "4.23.15",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vite": "8.3.0"
   },
   "lint-staged": {
     "*.{[jt]s,[jt]sx,[cm][jt]s}": [
-      "eslint --fix",
-      "prettier --write"
+      "oxlint --fix",
+      "oxfmt --no-error-on-unmatched-pattern"
     ],
-    "*.{json,md}": [
-      "prettier --write"
+    "*.{json,md,css,yml,yaml}": [
+      "oxfmt --no-error-on-unmatched-pattern"
     ]
   },
   "packageManager": "pnpm@10.34.5"

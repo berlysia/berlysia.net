@@ -1,10 +1,6 @@
-out
 *.log
-.next
-next-env.d.ts
 .envrc
 .env*.local
-.now
 public/~partytown
 
 .yarn/*
@@ -147,11 +143,8 @@ typings/
 .env
 
 .vscode
-.vercel
 
 test-results
 dist
 
-.next
-public/~partytown
-src/seeds/.tmp
+app/seeds/.tmp

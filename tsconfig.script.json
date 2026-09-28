@@ -4,9 +4,5 @@
     "module": "NodeNext",
     "moduleResolution": "nodenext"
   },
-  "include": [
-    "src/seeds/feeds.json",
-    "src/seeds/**/*.ts",
-    "src/lib/mdx/processForSeed.ts"
-  ]
+  "include": ["app/seeds/**/*.ts"]
 }

@@ -1,19 +1,22 @@
 {
-  "extends": "@tsconfig/next/tsconfig.json",
   "compilerOptions": {
     "module": "preserve",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
+    "strict": true,
     "noEmit": true,
     "target": "esnext",
     "resolveJsonModule": true,
     "moduleResolution": "bundler",
-    "jsx": "preserve",
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
     "isolatedModules": true,
+    "esModuleInterop": true,
     "declaration": false,
     "noEmitOnError": false,
     "incremental": true,
+    "tsBuildInfoFile": "node_modules/.cache/tsconfig.tsbuildinfo",
     "noUnusedLocals": false
   }
 }
