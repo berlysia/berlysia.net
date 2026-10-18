@@ -38,7 +38,7 @@
     "@hono/vite-ssg": "0.3.3",
     "@playwright/test": "1.63.0",
     "@types/fs-extra": "11.0.4",
-    "@types/node": "24.13.6",
+    "@types/node": "24.19.2",
     "autoprefixer": "10.6.1",
     "honox": "0.1.61",
     "jest": "29.7.0",
