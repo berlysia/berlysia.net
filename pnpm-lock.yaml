@@ -18,8 +18,8 @@ importers:
         specifier: 11.4.0
         version: 11.4.0
       hono:
-        specifier: 4.13.8
-        version: 4.13.8
+        specifier: 4.13.11
+        version: 4.13.11
       rss-parser:
         specifier: 3.13.0
         version: 3.13.0
@@ -29,7 +29,7 @@ importers:
     devDependencies:
       '@hono/vite-ssg':
         specifier: 0.3.3
-        version: 0.3.3(hono@4.13.8)
+        version: 0.3.3(hono@4.13.11)
       '@playwright/test':
         specifier: 1.63.0
         version: 1.63.0
@@ -44,7 +44,7 @@ importers:
         version: 10.6.1(postcss@8.5.28)
       honox:
         specifier: 0.1.61
-        version: 0.1.61(hono@4.13.8)
+        version: 0.1.61(hono@4.13.11)
       jest:
         specifier: 29.7.0
         version: 29.7.0(@types/node@24.19.2)
@@ -1461,8 +1461,8 @@ packages:
     resolution: {integrity: sha512-T2UbfbBEF32wiepXIsMlTW9+dDYC6wMh/t/vYA4tuOMKqWz/n3vr1NFSxQiyP+zk2mXsoMA/i/7qV6LKut1t1A==}
     engines: {node: '>= 0.4'}
 
-  hono@4.13.8:
-    resolution: {integrity: sha512-/Gng7NfoykZl2pjukW5Z6+8Yxm3BPRf86GTbQnt0SbySkvax4fyL4H3HhY1cCpBGmiW9XDRFzRV+CXK2W8QudQ==}
+  hono@4.13.11:
+    resolution: {integrity: sha512-/SMX/RQNJn7oNmFwH6DtwDqcrzZU2otm1FD6OJe2cWF6cfy/F8hq0XVBv7xW3FTJshRQwuBnXHDq2kNsdZnshg==}
     engines: {node: '>=16.9.0'}
 
   honox@0.1.61:
@@ -2789,19 +2789,19 @@ snapshots:
   '@esbuild/win32-x64@0.28.1':
     optional: true
 
-  '@hono/node-server@1.19.17(hono@4.13.8)':
+  '@hono/node-server@1.19.17(hono@4.13.11)':
     dependencies:
-      hono: 4.13.8
+      hono: 4.13.11
 
-  '@hono/vite-dev-server@0.25.3(hono@4.13.8)':
+  '@hono/vite-dev-server@0.25.3(hono@4.13.11)':
     dependencies:
-      '@hono/node-server': 1.19.17(hono@4.13.8)
-      hono: 4.13.8
+      '@hono/node-server': 1.19.17(hono@4.13.11)
+      hono: 4.13.11
       minimatch: 9.0.9
 
-  '@hono/vite-ssg@0.3.3(hono@4.13.8)':
+  '@hono/vite-ssg@0.3.3(hono@4.13.11)':
     dependencies:
-      hono: 4.13.8
+      hono: 4.13.11
 
   '@istanbuljs/load-nyc-config@1.1.0':
     dependencies:
@@ -3776,16 +3776,16 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.13.8: {}
+  hono@4.13.11: {}
 
-  honox@0.1.61(hono@4.13.8):
+  honox@0.1.61(hono@4.13.11):
     dependencies:
       '@babel/generator': 7.29.1
       '@babel/parser': 7.29.3
       '@babel/traverse': 7.29.0
       '@babel/types': 7.29.0
-      '@hono/vite-dev-server': 0.25.3(hono@4.13.8)
-      hono: 4.13.8
+      '@hono/vite-dev-server': 0.25.3(hono@4.13.11)
+      hono: 4.13.11
       jsonc-parser: 3.3.1
       precinct: 12.2.0
     optionalDependencies:
