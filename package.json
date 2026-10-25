@@ -32,7 +32,7 @@
     "fs-extra": "11.4.0",
     "hono": "4.13.11",
     "rss-parser": "3.13.0",
-    "zod": "3.25.76"
+    "zod": "4.6.6"
   },
   "devDependencies": {
     "@hono/vite-ssg": "0.3.3",
