@@ -20,8 +20,8 @@
     "format:check": "oxfmt --check",
     "test": "jest --passWithNoTests",
     "test:vrt:ci": "playwright test",
-    "test:vrt": "docker run --rm --user $(id -u):$(id -g) --volume $(pwd):/workdir/ --workdir /workdir/ -it mcr.microsoft.com/playwright:v1.63.0-jammy /bin/bash -c 'pnpm test:vrt:ci'",
-    "test:vrt:update": "docker run --rm --user $(id -u):$(id -g) --volume $(pwd):/workdir/ --workdir /workdir/ -it mcr.microsoft.com/playwright:v1.63.0-jammy /bin/bash -c 'pnpm test:vrt:ci -u'",
+    "test:vrt": "docker run --rm --user $(id -u):$(id -g) --volume $(pwd):/workdir/ --workdir /workdir/ -it mcr.microsoft.com/playwright:v1.64.1-jammy /bin/bash -c 'pnpm test:vrt:ci'",
+    "test:vrt:update": "docker run --rm --user $(id -u):$(id -g) --volume $(pwd):/workdir/ --workdir /workdir/ -it mcr.microsoft.com/playwright:v1.64.1-jammy /bin/bash -c 'pnpm test:vrt:ci -u'",
     "typecheck": "tsc --noEmit",
     "prepare": "git config --local core.hooksPath .githooks && echo 'githooks installed' || echo 'githooks install failed'",
     "precommit": "lint-staged"
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@hono/vite-ssg": "0.3.3",
-    "@playwright/test": "1.63.0",
+    "@playwright/test": "1.64.1",
     "@types/fs-extra": "11.0.4",
     "@types/node": "24.19.2",
     "autoprefixer": "10.6.1",
@@ -46,7 +46,7 @@
     "npm-run-all2": "6.2.6",
     "oxfmt": "0.68.0",
     "oxlint": "1.88.0",
-    "playwright": "1.63.0",
+    "playwright": "1.64.1",
     "postcss": "8.5.28",
     "tailwindcss": "3.4.19",
     "tailwindcss-logical": "3.0.1",
